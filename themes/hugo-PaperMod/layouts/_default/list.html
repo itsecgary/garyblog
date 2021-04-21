@@ -1,5 +1,5 @@
 {{- define "main" }}
-
+<div class="main-group">
 {{- if (and .Site.Params.profileMode.enabled .IsHome) }}
 {{- partial "index_profile.html" . }}
 {{- else }} {{/* if not profileMode */}}
@@ -77,5 +77,5 @@
 {{- end }}
 
 {{- end }}{{/* end profileMode */}}
-
+</div>
 {{- end }}{{- /* end main */ -}}
