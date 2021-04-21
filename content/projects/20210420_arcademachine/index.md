@@ -21,7 +21,7 @@ ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 cover:
-    image: "/arcade2.jfif" # image path/url
+    image: "arcade2.jfif" # image path/url
     alt: "arcade marquee" # alt text
     caption: "" # display caption under cover
     relative: false # when using page bundles set this to true
@@ -38,10 +38,7 @@ Total man-hours: 30
 Also, we designed it to fit a minifridge in the bottom so I could put it in my dorm.
 
 
-![arcade1](arcade1.jfif)
-
-
-![arcade3](arcade3.jfif)
+![arcade1](arcade1.jfif)   ![arcade3](arcade3.jfif)
 
 
 ![arcade4](arcade4.jpg)

@@ -21,7 +21,7 @@ ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 cover:
-    image: "/osv1.png" # image path/url
+    image: "osv1.png" # image path/url
     alt: "CAD of OSV" # alt text
     caption: "" # display caption under cover
     relative: false # when using page bundles set this to true
@@ -38,7 +38,10 @@ In order to complete our mission, we utilized our sensors to navigate the OSV au
 ![Circuitry](osv2.jpg)
 
 
-![Final presentation](osv3.pdf)
-
-
 ![Group Picture](osv4.jfif)
+
+<object data="https://www.itsecgary.com/projects/20210421_osvmission/osv3.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="osv3.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="osv3.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
