@@ -25,7 +25,7 @@ cover:
     alt: "HSCTF2020 Logo" # alt text
     caption: "" # display caption under cover
     relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
+    hidden: false # only hide on current single page
 ---
 
 **Dates:**
