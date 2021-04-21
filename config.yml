@@ -24,6 +24,9 @@ languages:
                 - name: Projects
                   url: projects/
                   weight: 5
+                - name: Coursework
+                  url: coursework/
+                  weight: 6
                 - name: Search
                   url: search/
                   weight: 12
