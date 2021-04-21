@@ -26,10 +26,10 @@ languages:
                   weight: 5
                 - name: Search
                   url: search/
-                  weight: 10
+                  weight: 12
                 - name: Tags
                   url: tags/
-                  weight: 10
+                  weight: 11
                 - name: Categories
                   url: categories/
                   weight: 10
@@ -67,10 +67,10 @@ params:
         imageWidth: 450
         imageHeight: 450
         buttons:
-            - name: Archives
-              url: archives
-            - name: Tags
-              url: tags
+            - name: Projects
+              url: projects
+            - name: Coursework
+              url: coursework
 
     homeInfoParams:
         Title: "itsecgary"
@@ -96,8 +96,8 @@ params:
     #     google:
     #         SiteVerificationTag: "XYZabc"
 
-    # assets:
-    #     favicon: "<link / abs url>"
+    assets:
+        favicon: "favicon.ico"
     #     favicon16x16: "<link / abs url>"
     #     favicon32x32: "<link / abs url>"
     #     apple_touch_icon: "<link / abs url>"
