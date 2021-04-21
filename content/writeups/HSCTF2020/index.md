@@ -40,6 +40,9 @@ https://ctftime.org/event/939
 [pwang00's writeups](https://github.com/pwang00/CTF-Writeups/tree/master/2020/hsctf)
 
 
+---
+
+
 ## Pythagorean Tree Fractal 1
 **Category:** Algorithms
 
@@ -70,6 +73,9 @@ in the flag since that is the format they want us to put it in.
 
 ### Flag
 flag{2251799813685245}
+
+
+---
 
 
 ## Pythagorean Tree Fractal 2
@@ -116,6 +122,10 @@ Total Area at 25 = 1.29902254294e+15
 
 ### Flag
 flag{1299022542940000}
+
+
+---
+
 
 
 ## Chonky E
@@ -235,9 +245,12 @@ flag{remarkably_superb_acronym}
 ### Resources
 - https://en.wikipedia.org/wiki/Schmidt-Samoa_cryptosystem
 
-- https://en.wikipedia.org/wiki/RSA_(cryptosystem)
+- "https://en.wikipedia.org/wiki/RSA_(cryptosystem)"
 
 - https://www.wolframalpha.com/
+
+
+---
 
 
 ## Unexpected
@@ -333,6 +346,9 @@ RSA Info: https://en.wikipedia.org/wiki/RSA_(cryptosystem)
 LCM and GCD functions: https://gist.github.com/endolith/114336/eff2dc13535f139d0d6a2db68597fad2826b53c3
 
 Wolfram Alpha: https://www.wolframalpha.com/
+
+
+---
 
 
 ## Picture Lab: Activity 10
@@ -445,6 +461,9 @@ flag{and_y0u_th0ught_p1ctur3_l4b_was_h4rd}
 - https://zoomadmin.com/HowToInstall/UbuntuPackage/pngcheck
 
 
+---
+
+
 ## AP Lab: English Language
 **Category:** Reverse
 
@@ -543,6 +562,9 @@ if __name__ == '__main__':
 
 ### Flag
 flag{n0t_t00_b4d_r1ght}
+
+
+---
 
 
 ## Ice Cream Bytes
@@ -757,6 +779,9 @@ Flag: flag{ic3_cr34m_byt3s_4r3_4m4z1n9_tr34ts}
 flag{ic3_cr34m_byt3s_4r3_4m4z1n9_tr34ts}
 
 
+---
+
+
 ## Blurry Eyes
 **Category:** Web
 
@@ -780,6 +805,9 @@ CTRL-C -> CTRL-V, we can find out class, which then gives us the flag.
 
 ### Flag
 flag{glasses_are_useful}
+
+
+---
 
 
 ## Broken Tokens
@@ -818,6 +846,9 @@ gave me the flag (didn't write it down and can't get it again...rip).
 JWT Linux Tool: https://github.com/ticarpi/jwt_tool
 
 JWT: https://jwt.io/
+
+
+---
 
 
 ## Debt Simulator
@@ -877,6 +908,9 @@ You can install the basic community edition for free because otherwise it is
 pricey!
 
 
+---
+
+
 ## Inspector Gadget
 **Category:** Web
 
@@ -895,6 +929,9 @@ Chrome. After looking around, we find our flags in an HTML comment.
 
 ### Flag
 flag{n1ce_j0b_0p3n1nG_th3_1nsp3ct0r_g4dg3t} 
+
+
+---
 
 
 ## Very Safe Login

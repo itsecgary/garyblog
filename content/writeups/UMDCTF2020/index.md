@@ -35,6 +35,10 @@ cover:
 >
 > https://ctftime.org/event/1040
 
+
+---
+
+
 ## Sensitive
 **Category:** Forensics
 
@@ -88,6 +92,8 @@ UMDCTF-{l0v3-me_s0meh3x}
 
 - https://mh-nexus.de/en/hxd/
 
+
+---
 
 
 ## Jarred1
@@ -173,6 +179,9 @@ UMDCTF-{Jarred_Sh0ulD_HaV3_L0ck3d_H1s_COmpu7er}
 - https://www.andreafortuna.org/2019/08/22/how-to-generate-a-volatility-profile-for-a-linux-system/
 
 
+---
+
+
 ## Nation State Musical
 **Category:** Forensics
 
@@ -223,6 +232,9 @@ of the attacks, but I'm not too sure what it is.
 UMDCTF-{Kazakhstan}
 
 
+---
+
+
 ## Nefarious Bits
 **Category:** Forensics
 
@@ -270,4 +282,5 @@ UMDCTF-{3vil_b1ts_@r3_4lw4ys_3vi1}
 
 ### Resources
 - https://en.wikipedia.org/wiki/Evil_bit
+
 
