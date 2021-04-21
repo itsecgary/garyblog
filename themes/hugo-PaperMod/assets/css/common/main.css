@@ -3,7 +3,8 @@
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
     max-width: 80%;
     margin: auto;
-    padding: var(--gap)
+    padding: var(--gap);
+    overflow: auto;
 }
 
 .page-header h1 {

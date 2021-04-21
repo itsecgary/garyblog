@@ -7,6 +7,7 @@ This is the repository for [itsecgary's website](https://itsecgary.com)
 **.main (main.css)**
 
 - `max-width: 80%;` 
+- `overflow: auto;`
 
 
 **.post-entry (post-entry.css)**
