@@ -22,7 +22,7 @@ languages:
         menu:
             main:
                 - name: Posts
-                  url: posts/
+                  url: post/
                   weight: 4
                 - name: Projects
                   url: projects/
