@@ -1,4 +1,4 @@
-baseURL: "https://itsecgary.com"
+baseURL: "https://www.itsecgary.com"
 title: itsecgary
 paginate: 5
 theme: hugo-PaperMod
@@ -103,11 +103,11 @@ params:
     #         SiteVerificationTag: "XYZabc"
 
 assets:
-    favicon: "https://www.itsecgary.com/favicon.ico"
-    favicon16x16: "https://www.itsecgary.com/favicon-16x16.png"
-    favicon32x32: "https://www.itsecgary.com/favicon-32x32.png"
-    apple_touch_icon: "https://www.itsecgary.com/apple-touch-icon.png"
-    safari_pinned_tab: "https://www.itsecgary.com/safari-pinned-tab.svg"
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: "/safari-pinned-tab.svg"
 
     # cover:
     #     hidden: true # hide everywhere but not in structured data
