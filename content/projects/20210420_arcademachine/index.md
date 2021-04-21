@@ -40,11 +40,6 @@ Also, we designed it to fit a minifridge in the bottom so I could put it in my d
 ![two-images](combined_arcade.png)
 
 
-![alt-text-1](arcade1.jfif)  
-
-
-![alt-text-2](arcade3.jfif)
-
 
 ![arcade4](arcade4.png)
 
