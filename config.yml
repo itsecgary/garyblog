@@ -64,8 +64,8 @@ params:
         title: itsecgary
         imageUrl: "/pic_itsecgary.png"
         imageTitle: pic_itsecgary
-        imageWidth: 500
-        imageHeight: 500
+        imageWidth: 450
+        imageHeight: 450
         buttons:
             - name: Archives
               url: archives
