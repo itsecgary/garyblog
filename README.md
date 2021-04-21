@@ -16,3 +16,8 @@ This is the repository for [itsecgary's website](https://itsecgary.com)
 - `float: left;`
 - `margin-right: 30px;`
 
+
+**.main .profile (profile-mode.css)**
+
+- `top: 50px`
+

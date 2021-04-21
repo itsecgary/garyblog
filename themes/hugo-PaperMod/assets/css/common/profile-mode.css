@@ -10,7 +10,8 @@
     right: 0;
     align-items: center;
     height: 80%;
-    text-align: center
+    text-align: center;
+    top: 50px;
 }
 
 .profile .profile_inner h1 {
