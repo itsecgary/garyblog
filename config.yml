@@ -28,7 +28,7 @@ languages:
                   url: projects/
                   weight: 5
                 - name: Coursework
-                  url: #
+                  url: /
                   weight: 6
                 - name: Search
                   url: search/
@@ -66,6 +66,8 @@ params:
         imageWidth: 450
         imageHeight: 450
         buttons:
+            - name: Posts
+              url: post/
             - name: Projects
               url: projects/
             - name: Coursework
