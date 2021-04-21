@@ -6,9 +6,18 @@ This is the repository for [itsecgary's website](https://itsecgary.com)
 
 **.main (main.css)**
 
-- `max-width: 80%;` 
-- `overflow: auto;`
+added (for list.html):
 
+```css
+.main-group {
+    position: relative;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    max-width: 80%;
+    margin: auto;
+    padding: var(--gap);
+    overflow: auto;
+}
+```
 
 **.post-entry (post-entry.css)**
 
