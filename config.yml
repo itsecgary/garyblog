@@ -33,13 +33,6 @@ languages:
                 - name: Search
                   url: search/
                   weight: 12
-                - name: Tags
-                  url: tags/
-                  weight: 11
-                - name: Categories
-                  url: categories/
-                  weight: 10
-
 
 outputs:
     home:
@@ -74,9 +67,14 @@ params:
         imageHeight: 450
         buttons:
             - name: Projects
-              url: projects
+              url: projects/
             - name: Coursework
-              url: coursework
+              url: coursework/
+            - name: Tags
+              url: tags/
+            - name: Categories
+              url: categories/
+
 
     homeInfoParams:
         Title: "itsecgary"
