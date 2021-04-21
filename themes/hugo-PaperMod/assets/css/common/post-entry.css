@@ -40,7 +40,7 @@
     background: var(--entry);
     border-radius: var(--radius);
     transition: transform .1s;
-    max-width: 350px;
+    width: 350px;
     float: left;
     margin-right: 30px;
     border: 1px solid var(--border);

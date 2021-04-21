@@ -11,7 +11,7 @@ This is the repository for [itsecgary's website](https://itsecgary.com)
 
 **.post-entry (post-entry.css)**
 
-- `max-width: 350px;`
+- `width: 350px;`
 - `float: left;`
 - `margin-right: 30px;`
 
