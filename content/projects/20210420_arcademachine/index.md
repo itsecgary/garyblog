@@ -37,9 +37,10 @@ Total man-hours: 30
 
 Also, we designed it to fit a minifridge in the bottom so I could put it in my dorm.
 
-           test1           |           test2
-:-------------------------:|:-------------------------:
- ![arcade1](arcade1.jfif)  |  ![arcade3](arcade3.jfif)
+<p float="left">
+  <img src="/arcade1.jfif" />
+  <img src="/arcade3.jfif" /> 
+</p>
 
 
 ![arcade4](arcade4.jpg)
