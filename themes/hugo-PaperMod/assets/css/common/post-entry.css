@@ -4,7 +4,6 @@
     flex-direction: column;
     justify-content: center;
     min-height: 100px;
-    max-height: 200px
     margin: var(--gap) 0 calc(var(--gap) * 2) 0
 }
 
@@ -41,6 +40,9 @@
     background: var(--entry);
     border-radius: var(--radius);
     transition: transform .1s;
+    max-width: 350px;
+    float: left;
+    margin-right: 30px;
     border: 1px solid var(--border);
 }
 
