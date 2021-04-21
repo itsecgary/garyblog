@@ -1,17 +1,17 @@
 ---
-title: "CTF"
-date: 2021-04-21T14:16:00+00:00
+title: "UMDCTF2020"
+date: 2020-04-20T14:16:00+00:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["ctf", "writeup", "compete", "create"]
+tags: ["ctf", "writeup", "compete", "umdctf"]
 author: "Me"
 # author: ["Me", "You"] # multiple authors
-showToc: false
+showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Desc Text."
+description: "A writeup of some challeges from UMDCTF2020"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
@@ -21,11 +21,11 @@ ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
+    image: "umdctf2020_logo.png" # image path/url
+    alt: "UMDCTF2020 Logo" # alt text
+    caption: "" # display caption under cover
     relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
+    hidden: false # only hide on current single page
 ---
 
 # UMDCTF2020
@@ -35,13 +35,6 @@ cover:
 > - itsecgary (solo *#rip*)
 
 https://ctftime.org/event/1040
-
-## Forensics
-- [Sensitive (150)](https://github.com/itsecgary/CTFs/tree/master/UMDCTF%202020/Sensitive)
-- [Jarred1 (200)](https://github.com/itsecgary/CTFs/tree/master/UMDCTF%202020/Jarred1)
-- [Nation State Musical (300)](https://github.com/itsecgary/CTFs/tree/master/UMDCTF%202020/Nation-State-Musical)
-- [Nefarious Bits (400)](https://github.com/itsecgary/CTFs/tree/master/UMDCTF%202020/Nefarious-Bits)
-
 
 ## Sensitive
 **Category:** Forensics
