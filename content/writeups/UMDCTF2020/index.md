@@ -24,17 +24,16 @@ cover:
     image: "umdctf2020_logo.png" # image path/url
     alt: "UMDCTF2020 Logo" # alt text
     caption: "" # display caption under cover
-    relative: false # when using page bundles set this to true
+    relative: true # when using page bundles set this to true
     hidden: false # only hide on current single page
 ---
 
-# UMDCTF2020
 > **Dates:** April 18th - April 19th (24 hrs)
 >
 > **Team Members:**
 > - itsecgary (solo *#rip*)
-
-https://ctftime.org/event/1040
+>
+> https://ctftime.org/event/1040
 
 ## Sensitive
 **Category:** Forensics
