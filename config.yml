@@ -21,11 +21,14 @@ languages:
         weight: 1
         menu:
             main:
+                - name: Posts
+                  url: posts/
+                  weight: 4
                 - name: Projects
                   url: projects/
                   weight: 5
                 - name: Coursework
-                  url: coursework/
+                  url: #
                   weight: 6
                 - name: Search
                   url: search/
