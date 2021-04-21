@@ -8,6 +8,79 @@
       <url>https://itsecgary.com/pic_itsecgary.png</url>
       <link>https://itsecgary.com/pic_itsecgary.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://itsecgary.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 21 Apr 2021 09:00:00 +0000</lastBuildDate><atom:link href="https://itsecgary.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>arduino</title>
+      <link>https://itsecgary.com/tags/arduino/</link>
+      <pubDate>Wed, 21 Apr 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://itsecgary.com/tags/arduino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>electronics</title>
+      <link>https://itsecgary.com/tags/electronics/</link>
+      <pubDate>Wed, 21 Apr 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://itsecgary.com/tags/electronics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arcade</title>
+      <link>https://itsecgary.com/tags/arcade/</link>
+      <pubDate>Tue, 20 Apr 2021 11:37:03 +0000</pubDate>
+      
+      <guid>https://itsecgary.com/tags/arcade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rpi</title>
+      <link>https://itsecgary.com/tags/rpi/</link>
+      <pubDate>Tue, 20 Apr 2021 11:37:03 +0000</pubDate>
+      
+      <guid>https://itsecgary.com/tags/rpi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>woodwork</title>
+      <link>https://itsecgary.com/tags/woodwork/</link>
+      <pubDate>Tue, 20 Apr 2021 11:37:03 +0000</pubDate>
+      
+      <guid>https://itsecgary.com/tags/woodwork/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>https://itsecgary.com/tags/blog/</link>
+      <pubDate>Tue, 20 Apr 2021 11:07:03 +0000</pubDate>
+      
+      <guid>https://itsecgary.com/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>first</title>
+      <link>https://itsecgary.com/tags/first/</link>
+      <pubDate>Tue, 20 Apr 2021 11:07:03 +0000</pubDate>
+      
+      <guid>https://itsecgary.com/tags/first/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>welcome</title>
+      <link>https://itsecgary.com/tags/welcome/</link>
+      <pubDate>Tue, 20 Apr 2021 11:07:03 +0000</pubDate>
+      
+      <guid>https://itsecgary.com/tags/welcome/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

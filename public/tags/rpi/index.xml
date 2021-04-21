@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rpi on itsecgary</title>
+    <link>https://itsecgary.com/tags/rpi/</link>
+    <description>Recent content in rpi on itsecgary</description>
+    <image>
+      <url>https://itsecgary.com/pic_itsecgary.png</url>
+      <link>https://itsecgary.com/pic_itsecgary.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 20 Apr 2021 11:37:03 +0000</lastBuildDate><atom:link href="https://itsecgary.com/tags/rpi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raspberry Pi Arcade Machine</title>
+      <link>https://itsecgary.com/projects/20210420_arcademachine/</link>
+      <pubDate>Tue, 20 Apr 2021 11:37:03 +0000</pubDate>
+      
+      <guid>https://itsecgary.com/projects/20210420_arcademachine/</guid>
+      <description>How I built my own arcade machine</description>
+    </item>
+    
+  </channel>
+</rss>
