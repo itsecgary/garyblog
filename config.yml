@@ -63,8 +63,8 @@ params:
         title: itsecgary
         imageUrl: "/pic_itsecgary.png"
         imageTitle: pic_itsecgary
-        imageWidth: 450
-        imageHeight: 450
+        imageWidth: 400
+        imageHeight: 400
         buttons:
             - name: Posts
               url: post/
