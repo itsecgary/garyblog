@@ -14,7 +14,7 @@
 {{- end -}}
 " id="top">
     {{- partialCached "header.html" . .Page -}}
-    <main class="main-group">
+    <main class="main">
         {{- block "main" . }}{{ end }}
     </main>
     {{ partialCached "footer.html" . .Layout .Kind -}}
