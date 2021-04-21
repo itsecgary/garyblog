@@ -25,7 +25,7 @@ cover:
     alt: "arcade marquee" # alt text
     caption: "" # display caption under cover
     relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
+    hidden: false # only hide on current single page
 ---
 
 After my senior year of high school, I came up with the idea to build an arcade machine. At first, I just wanted one. I wanted to own an arcade machine cause I always wanted to play it whenever I would like. After doing some research and realizing the cost of buying an arcade machine is really high, I decided I could build one myself with a Raspberry Pi.
