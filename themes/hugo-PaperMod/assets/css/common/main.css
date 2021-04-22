@@ -1,9 +1,12 @@
+.body {
+    max-width: 80%;
+    margin: auto;
+}
+
 .main-group {
     position: relative;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
-    max-width: 80%;
     margin: auto;
-    padding: var(--gap);
     overflow: auto;
 }
 
