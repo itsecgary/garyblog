@@ -6,8 +6,8 @@ weight: 2
 tags: ["ctf", "writeup", "compete", "hsctf"]
 author: "Me"
 # author: ["Me", "You"] # multiple authors
-showToc: false
-TocOpen: false
+showToc: true
+TocOpen: true
 draft: false
 hidemeta: false
 comments: false
