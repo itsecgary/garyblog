@@ -1,7 +1,7 @@
 ---
 title: "Welcome To My Website"
 date: 2021-04-20T11:07:03+00:00
-# weight: 1
+weight: 1
 # aliases: ["/first"]
 tags: ["first", "blog", "welcome"]
 author: "Me"
