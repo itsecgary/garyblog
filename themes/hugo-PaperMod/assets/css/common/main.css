@@ -1,5 +1,5 @@
 body {
-    max-width: 80%;
+    max-width: calc(var(--main-width) + var(--gap) * 2);
     margin: auto;
 }
 
