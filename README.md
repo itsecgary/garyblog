@@ -30,3 +30,8 @@ added (for list.html):
 
 - `top: 50px`
 
+
+**(assets/css/core/theme-vars.css)**
+
+- changed `--nav-width: 720px;`
+
