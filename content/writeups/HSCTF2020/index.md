@@ -43,7 +43,7 @@ https://ctftime.org/event/939
 ---
 
 
-## Pythagorean Tree Fractal 1
+## (algorithms) Pythagorean Tree Fractal 1
 **Category:** Algorithms
 
 **Points:** 100
@@ -78,7 +78,7 @@ flag{2251799813685245}
 ---
 
 
-## Pythagorean Tree Fractal 2
+## (algorithms) Pythagorean Tree Fractal 2
 **Category:** Algorithms
 
 **Points:** 100
@@ -128,7 +128,7 @@ flag{1299022542940000}
 
 
 
-## Chonky E
+## (crypto) Chonky E
 **Category:** Crypto
 
 **Points:** 100
@@ -253,7 +253,7 @@ flag{remarkably_superb_acronym}
 ---
 
 
-## Unexpected
+## (crypto) Unexpected
 **Category:** Crypto
 
 **Points:** 100
@@ -351,7 +351,7 @@ Wolfram Alpha: https://www.wolframalpha.com/
 ---
 
 
-## Picture Lab: Activity 10
+## (forensics) Picture Lab: Activity 10
 **Category:** Forensics
 
 **Points:** 100
@@ -464,7 +464,7 @@ flag{and_y0u_th0ught_p1ctur3_l4b_was_h4rd}
 ---
 
 
-## AP Lab: English Language
+## (reverse) AP Lab: English Language
 **Category:** Reverse
 
 **Points:** 100
@@ -567,7 +567,7 @@ flag{n0t_t00_b4d_r1ght}
 ---
 
 
-## Ice Cream Bytes
+## (reverse) Ice Cream Bytes
 **Category:** Reverse
 
 **Points:** 100
@@ -782,7 +782,7 @@ flag{ic3_cr34m_byt3s_4r3_4m4z1n9_tr34ts}
 ---
 
 
-## Blurry Eyes
+## (web) Blurry Eyes
 **Category:** Web
 
 **Points:** 100
@@ -810,7 +810,7 @@ flag{glasses_are_useful}
 ---
 
 
-## Broken Tokens
+## (web) Broken Tokens
 **Category:** Web
 
 **Points:** 100
@@ -851,7 +851,7 @@ JWT: https://jwt.io/
 ---
 
 
-## Debt Simulator
+## (web) Debt Simulator
 **Category:** Web
 
 **Points:** 100
@@ -911,7 +911,7 @@ pricey!
 ---
 
 
-## Inspector Gadget
+## (web) Inspector Gadget
 **Category:** Web
 
 **Points:** 100
@@ -934,7 +934,7 @@ flag{n1ce_j0b_0p3n1nG_th3_1nsp3ct0r_g4dg3t}
 ---
 
 
-## Very Safe Login
+## (web) Very Safe Login
 **Category:** Web
 
 **Points:** 100
