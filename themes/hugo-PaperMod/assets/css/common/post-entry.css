@@ -100,7 +100,7 @@
 .entry-cover img {
     border-radius: var(--radius);
     pointer-events: none;
-    width: 100%
+    max-width: 400px;
 }
 
 .entry-cover a {
