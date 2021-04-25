@@ -44,6 +44,3 @@ I was only able to solve a couple forensics challenges for this competition sinc
 [<img src="forensics.png">](https://www.itsecgary.com/forensics/umdctf2020)
 
 
-[Forensics](https://www.itsecgary.com/forensics/umdctf2020)
-
-
