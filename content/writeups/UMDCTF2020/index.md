@@ -39,7 +39,7 @@ cover:
 ---
 
 
-## Sensitive
+## (forensics) Sensitive
 **Category:** Forensics
 
 **Points:** 150
@@ -96,7 +96,7 @@ UMDCTF-{l0v3-me_s0meh3x}
 ---
 
 
-## Jarred1
+## (forensics) Jarred1
 **Category:** Forensics
 
 **Points:** 200
@@ -182,7 +182,7 @@ UMDCTF-{Jarred_Sh0ulD_HaV3_L0ck3d_H1s_COmpu7er}
 ---
 
 
-## Nation State Musical
+## (forensics) Nation State Musical
 **Category:** Forensics
 
 **Points:** 300
@@ -235,7 +235,7 @@ UMDCTF-{Kazakhstan}
 ---
 
 
-## Nefarious Bits
+## (forensics) Nefarious Bits
 **Category:** Forensics
 
 **Points:** 400
