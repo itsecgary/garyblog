@@ -1,9 +1,9 @@
 ---
-title: "Reversing Challenges"
+title: "Algorithms/Programming Challenges"
 date: 2021-04-21T14:16:00+00:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["writeup", "reversing"]
+tags: ["writeup", "algorithms", "programming"]
 author: "Me"
 # author: ["Me", "You"] # multiple authors
 showToc: true
@@ -11,7 +11,7 @@ TocOpen: true
 draft: false
 hidemeta: false
 comments: false
-description: "Writeups for reversing challenges"
+description: "Writeups on algorithm and programming challenges"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
