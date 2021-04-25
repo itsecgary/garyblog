@@ -1,9 +1,9 @@
 ---
-title: "This is a writeup overall"
+title: "Forensics Challenges"
 date: 2021-04-21T14:16:00+00:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["ctf", "writeup", "compete", "create"]
+tags: ["writeup", "forensics"]
 author: "Me"
 # author: ["Me", "You"] # multiple authors
 showToc: true
