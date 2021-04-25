@@ -1,6 +1,8 @@
 body {
     max-width: calc(var(--main-width) + var(--gap) * 2);
     margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .main-group {
