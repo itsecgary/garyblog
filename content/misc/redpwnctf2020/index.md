@@ -165,7 +165,7 @@ flag{vm_1snt_s4f3_4ft3r_41l_29ka5sqD}
 ### Flag
 `flag{vm_1snt_s4f3_4ft3r_41l_29ka5sqD}`
 
-## Resources
+### Resources
 [readFileSync](https://www.geeksforgeeks.org/node-js-fs-readfilesync-method/?ref=leftbar-rightbar)
 
 [Main idea](https://github.com/gf3/sandbox/issues/50)

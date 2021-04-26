@@ -73,7 +73,7 @@ All it took was a little messing around with the contrast and brightness and my 
 reader picked it up.
 
 ### Flag
-UMDCTF-{l0v3-me_s0meh3x}
+`UMDCTF-{l0v3-me_s0meh3x}`
 
 ### Resources
 - https://www.guru99.com/reading-and-writing-files-in-python.html
@@ -155,7 +155,7 @@ terminal and ended up getting the flag: UMDCTF-{Jarred_Sh0ulD_HaV3_L0ck3d_H1s_CO
 
 
 ### Flag
-UMDCTF-{Jarred_Sh0ulD_HaV3_L0ck3d_H1s_COmpu7er}
+`UMDCTF-{Jarred_Sh0ulD_HaV3_L0ck3d_H1s_COmpu7er}`
 
 ### Resources
 - https://www.linkedin.com/pulse/linux-memory-analysis-how-start-what-you-need-know-james-bower/
@@ -217,7 +217,7 @@ There is probably an explanation to why this IP address is the actual source
 of the attacks, but I'm not too sure what it is.
 
 ### Flag
-UMDCTF-{Kazakhstan}
+`UMDCTF-{Kazakhstan}`
 
 
 ---
@@ -266,7 +266,7 @@ the field I wanted. I named it "test.csv" for the script. My script printed
 out the binary for this pcap. See script "nefarious.py"
 
 ### Flag
-UMDCTF-{3vil_b1ts_@r3_4lw4ys_3vi1}
+`UMDCTF-{3vil_b1ts_@r3_4lw4ys_3vi1}`
 
 ### Resources
 - https://en.wikipedia.org/wiki/Evil_bit

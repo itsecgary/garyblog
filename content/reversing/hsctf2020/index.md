@@ -27,7 +27,7 @@ ShowPostNavLinks: true
 ---
 
 
-## (reverse) AP Lab: English Language
+## AP Lab: English Language
 **Category:** Reverse
 
 **Points:** 100
@@ -130,7 +130,7 @@ if __name__ == '__main__':
 ---
 
 
-## (reverse) Ice Cream Bytes
+## Ice Cream Bytes
 **Category:** Reverse
 
 **Points:** 100

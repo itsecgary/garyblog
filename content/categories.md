@@ -5,7 +5,7 @@ showToc: false
 TocOpen: false
 ---
 
-## CTF Categories
+### CTF Categories
 
 - [Algorithms / Programming](https://itsecgary.com/alg-prog/)
 
@@ -24,7 +24,7 @@ TocOpen: false
 - [Web Exploitation](https://itsecgary.com/webexp/)
 
 
-## Other Categories
+### Other Categories
 
 - HTB ---- coming soon
 

@@ -22,7 +22,7 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ---
 
-<img src="/img/reverse.png">
+<img src="/img/reversing.png">
 
 ---
 
