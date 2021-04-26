@@ -42,7 +42,7 @@ cover:
 I was only able to solve a couple forensics challenges for this competition since I am pretty new to this game :/
 
 <a href="https://www.itsecgary.com/forensics/umdctf2020">
-    <img src="/img/forensics.png", height="70">
+    <img src="/img/forensics.png" height="70" class="border">
 </a>
 
 

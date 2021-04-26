@@ -77,3 +77,8 @@ div.highlight:hover .copy-code,
 pre:hover .copy-code {
     display: block;
 }
+
+.border {  
+    border: 2px solid black; 
+} 
+
