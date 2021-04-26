@@ -60,18 +60,14 @@ params:
 
     profileMode:
         enabled: true
-        title: [itsecgary](https://itsecgary.com/about/)
+        title: itsecgary
         imageUrl: "/pic_itsecgary.png"
         imageTitle: pic_itsecgary
         imageWidth: 400
         imageHeight: 400
         buttons:
-            - name: Posts
-              url: post/
-            - name: Projects
-              url: projects/
-            - name: Writeups
-              url: writeups/
+            - name: About
+              url: about/
             - name: Tags
               url: tags/
             - name: Categories
