@@ -1,7 +1,7 @@
 ---
 title: "redpwnCTF 2020"
 date: 2020-06-29T14:16:00+00:00
-# weight: 1
+weight: 9997
 # aliases: ["/first"]
 tags: ["ctf", "writeup", "compete", "redpwnctf"]
 author: "Me"

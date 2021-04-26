@@ -1,7 +1,7 @@
 ---
 title: "HSCTF2020"
 date: 2020-05-06T15:07:00+00:00
-weight: 2
+weight: 9999
 # aliases: ["/first"]
 tags: ["ctf", "writeup", "compete", "hsctf"]
 author: "Me"

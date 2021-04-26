@@ -636,10 +636,10 @@ forming. It was just a matter of those primes because they showed up in every by
 From here, all I really did was guess between the four options and see what looked
 and sounded like English (yikes). Not the most impressive route, but it got me there.
 
-## Flag
+### Flag
 `flag{bits_leaking_out_down_the_water_spout}`
 
-## Post Note
+### Post Note
 Now I'm gonna go look at the other writeups for this challenge and realize how much time
 I probably wasted in this approach lol
 
