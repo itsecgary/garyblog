@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "A writeup of some challeges from UMDCTF2020"
+description: "A writeup of some challeges for UMDCTF2020"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false

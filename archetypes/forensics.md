@@ -11,7 +11,7 @@ TocOpen: true
 draft: false
 hidemeta: false
 comments: false
-description: "Writeups for forensics challenges"
+description: "Writeups on forensics challenges"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false

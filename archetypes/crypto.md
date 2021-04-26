@@ -11,7 +11,7 @@ TocOpen: true
 draft: false
 hidemeta: false
 comments: false
-description: "Writeups for crypto challenges"
+description: "Writeups on crypto challenges"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false

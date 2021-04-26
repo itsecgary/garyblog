@@ -11,7 +11,7 @@ TocOpen: true
 draft: false
 hidemeta: false
 comments: false
-description: "Writeups for web exploitation challenges"
+description: "Writeups on web exploitation challenges"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
