@@ -42,7 +42,7 @@ https://ctftime.org/event/939
 
 ---
 
-[<img src="/img/algorithms.png, style="max-height: 70px"">](https://www.itsecgary.com/alg-prog/hsctf2020)
+[<img src="/img/algorithms.png", width="50%">](https://www.itsecgary.com/alg-prog/hsctf2020)
 
 [<img src="/img/crypto.png", style="max-height: 70px">](https://www.itsecgary.com/crypto/hsctf2020)
 
