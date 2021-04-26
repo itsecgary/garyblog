@@ -21,7 +21,7 @@ ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 cover:
-    image: "zh3r0ctf_logo.png" # image path/url
+    image: "zh3r0ctf_logo.jpg" # image path/url
     alt: "Zero CTF Logo" # alt text
     caption: "" # display caption under cover
     relative: false # when using page bundles set this to true
