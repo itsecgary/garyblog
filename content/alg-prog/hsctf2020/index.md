@@ -22,7 +22,7 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ---
 
-<img src="algorithms.png">
+<img src="/img/algorithms.png">
 
 ---
 

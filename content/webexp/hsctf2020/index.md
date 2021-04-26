@@ -22,7 +22,7 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ---
 
-<img src="web.png">
+<img src="/img/web.png">
 
 ---
 

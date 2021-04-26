@@ -22,7 +22,12 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ---
 
-## (crypto) Chonky E
+<img src="/img/crypto.png">
+
+---
+
+
+## Chonky E
 **Category:** Crypto
 
 **Points:** 100
@@ -147,7 +152,7 @@ decryption key and uses it on the cipher text:
 ---
 
 
-## (crypto) Unexpected
+## Unexpected
 **Category:** Crypto
 
 **Points:** 100

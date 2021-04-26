@@ -22,7 +22,7 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ---
 
-<img src="forensics.png">
+<img src="/img/forensics.png">
 
 ---
 
