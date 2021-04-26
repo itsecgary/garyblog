@@ -1,6 +1,6 @@
 ---
-title: "HSCTF 2020 ---> Web"
-date: 2021-04-21T14:16:00+00:00
+title: "HSCTF 2020 Web"
+date: 2020-06-06T14:16:00+00:00
 # weight: 1
 # aliases: ["/first"]
 tags: ["web", "writeup", "hsctf"]
