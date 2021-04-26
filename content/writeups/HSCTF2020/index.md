@@ -41,25 +41,25 @@ https://ctftime.org/event/939
 
 
 ---
-
+<br>
 <a href="https://www.itsecgary.com/alg-prog/hsctf2020">
-    <img src="/img/algorithms.png", height="70">
+    <img src="/img/algorithms.png" height="70" class="border">
 </a>
-
+<br>
 <a href="https://www.itsecgary.com/crypto/hsctf2020">
-    <img src="/img/crypto.png", height="70">
+    <img src="/img/crypto.png" height="70" class="border">
 </a>
-
+<br>
 <a href="https://www.itsecgary.com/forensics/hsctf2020">
-    <img src="/img/forensics.png", height="70">
+    <img src="/img/forensics.png" height="70" class="border">
 </a>
-
+<br>
 <a href="https://www.itsecgary.com/reversing/hsctf2020">
-    <img src="/img/reversing.png", height="70">
+    <img src="/img/reversing.png" height="70" class="border">
 </a>
-
+<br>
 <a href="https://www.itsecgary.com/webexp/hsctf2020">
-    <img src="/img/web.png", height="70">
+    <img src="/img/web.png" height="70" class="border">
 </a>
 
 ---
