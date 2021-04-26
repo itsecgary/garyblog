@@ -56,7 +56,7 @@ params:
     ShowBreadCrumbs: true
     ShowToc: true
     # comments: false
-    images: ["pic_itsecgary.png"]
+    images: ["/img/pic_itsecgary.png"]
 
     profileMode:
         enabled: true

@@ -28,7 +28,7 @@ cover:
     hidden: false # only hide on current single page
 ---
 
-Hello and welcome to my blog! I will mainly use this website as a platform for CTF writeups, research, past coursework, and loads of projects. I've been meaning to make this website for a while now and I believe I've finally found a good setup. If you want to learn more about me, feel free to peep my [About Page](https://itsecgary.com/about.html)! 
+Hello and welcome to my blog! I will mainly use this website as a platform for CTF writeups, research, past coursework, and loads of projects. I've been meaning to make this website for a while now and I believe I've finally found a good setup. If you want to learn more about me, feel free to peep my [About Page](https://itsecgary.com/about/)! 
 
 In the future I might add some other pages to showcase what I am working on, but for now I will try to keep it simple - projects, coursework, cool stuff, and so on...
 

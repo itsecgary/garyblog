@@ -1,6 +1,8 @@
 ---
 title: "About"
 draft: false
+showToc: false
+TocOpen: false
 ---
 
 ![profile](/img/pic_itsecgary.jpg)
