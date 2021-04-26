@@ -10,12 +10,12 @@ showToc: false
 TocOpen: false
 draft: false
 hidemeta: false
-comments: false
+comments: true
 description: "A writeup of some challeges for UMDCTF2020"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
-hideSummary: false
+hideSummary: true
 searchHidden: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
