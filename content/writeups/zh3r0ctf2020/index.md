@@ -6,8 +6,8 @@ date: 2020-06-18T00:00:00+00:00
 tags: ["ctf", "writeup", "compete", "zh3r0ctf"]
 author: "Me"
 # author: ["Me", "You"] # multiple authors
-showToc: true
-TocOpen: true
+showToc: false
+TocOpen: false
 draft: false
 hidemeta: false
 comments: false
