@@ -32,14 +32,13 @@ After my senior year of high school, I came up with the idea to build an arcade 
 
 I came to my father's friend with the idea of building this thing and he was down to help me out. With his woodworking experience, we were able to make an arcade machine from scratch.
 
-Total cost: ~$800
-Total man-hours: 30
+**Total cost:** ~$800
+
+**Total man-hours:** 30 hours
 
 Also, we designed it to fit a minifridge in the bottom so I could put it in my dorm.
 
-![two-images](combined_arcade.png)
-
-
+<img src="combined_arcade.png" width="800">
 
 ![arcade4](arcade4.png)
 
