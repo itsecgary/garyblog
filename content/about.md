@@ -5,7 +5,7 @@ showToc: false
 TocOpen: false
 ---
 
-![profile](/img/pic_itsecgary.png)
+<img src="/img/pic_itsecgary.png" height="600">
 
 Hello, thank you for coming to my website! My name is Gary and I am a junior computer engineering major and Russian language minor at the University of Maryland. I am passionate about cybersecurity, electrical engineering, computer science, and anything related to space.
 
