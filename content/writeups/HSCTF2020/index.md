@@ -41,19 +41,26 @@ https://ctftime.org/event/939
 
 
 ---
-<a href="https://developer.mozilla.org">
+
+<a href="https://www.itsecgary.com/alg-prog/hsctf2020">
     <img src="/img/algorithms.png", height="70">
 </a>
 
-[<img src="/img/algorithms.png", height="70">](https://www.itsecgary.com/alg-prog/hsctf2020)
+<a href="https://www.itsecgary.com/crypto/hsctf2020">
+    <img src="/img/crypto.png", height="70">
+</a>
 
-[<img src="/img/crypto.png", style="max-height: 70px">](https://www.itsecgary.com/crypto/hsctf2020)
+<a href="https://www.itsecgary.com/forensics/hsctf2020">
+    <img src="/img/forensics.png", height="70">
+</a>
 
-[<img src="/img/forensics.png", style="max-height: 70px">](https://www.itsecgary.com/forensics/hsctf2020)
+<a href="https://www.itsecgary.com/reversing/hsctf2020">
+    <img src="/img/reversing.png", height="70">
+</a>
 
-[<img src="/img/reversing.png", style="max-height: 70px">](https://www.itsecgary.com/reversing/hsctf2020)
-
-[<img src="/img/web.png", style="max-height: 70px">](https://www.itsecgary.com/webexp/hsctf2020)
+<a href="https://www.itsecgary.com/webexp/hsctf2020">
+    <img src="/img/web.png", height="70">
+</a>
 
 ---
 
