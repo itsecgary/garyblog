@@ -1,8 +1,9 @@
 ---
-title: "About itsecgary"
-date: 2021-04-25T21:14:31-04:00
-draft: true
+title: "About"
+draft: false
 ---
+
+![profile](/img/pic_itsecgary.jpg)
 
 Hello, thank you for coming to my website! My name is Gary and I am a junior computer engineering major and Russian language minor at the University of Maryland. I am passionate about cybersecurity, electrical engineering, computer science, and anything related to space.
 
