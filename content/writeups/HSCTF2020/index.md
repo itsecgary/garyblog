@@ -35,6 +35,8 @@ cover:
 > - itsecgary
 > - pwang00
 >
+> **Place:** 121st
+>
 > https://ctftime.org/event/939
 >
 > [pwang00's writeups](https://github.com/pwang00/CTF-Writeups/tree/master/2020/hsctf)

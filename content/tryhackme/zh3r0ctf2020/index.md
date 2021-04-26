@@ -1,7 +1,7 @@
 ---
 title: "ZH3R0CTF 2020 HTB"
 date: 2020-06-18T14:16:00+00:00
-# weight: 1
+weight: 9998
 # aliases: ["/first"]
 tags: ["tryhackme", "writeup", "htb", "zh3r0ctf"]
 author: "Me"

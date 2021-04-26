@@ -1,7 +1,7 @@
 ---
 title: "HSCTF 2020 Algorithms"
 date: 2020-06-06T14:16:00+00:00
-# weight: 1
+weight: 9999
 # aliases: ["/first"]
 tags: ["writeup", "algorithms", "programming", "hsctf"]
 author: "Me"

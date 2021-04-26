@@ -35,6 +35,8 @@ cover:
 > - itsecgary
 > - birch
 >
+> **Place:** 97th
+>
 > https://ctftime.org/event/1062
 
 ---

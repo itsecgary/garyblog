@@ -34,7 +34,10 @@ cover:
 > - itsecgary
 > - birch
 > - bencarlisle15
-
+>
+> **Place:** 108th
+>
+> https://ctftime.org/event/995
 ---
 
 <br>

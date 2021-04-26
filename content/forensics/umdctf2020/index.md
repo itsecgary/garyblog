@@ -1,7 +1,7 @@
 ---
 title: "UMDCTF 2020 Forensics"
 date: 2020-04-20T14:16:00+00:00
-# weight: 1
+weight: 10000
 # aliases: ["/first"]
 tags: ["writeup", "forensics", "umdctf"]
 author: "Me"

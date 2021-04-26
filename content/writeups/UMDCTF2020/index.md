@@ -33,8 +33,9 @@ cover:
 > **Team Members:**
 > - itsecgary (solo *#rip*)
 >
+> **Place:** 121st
+>
 > https://ctftime.org/event/1040
-
 
 ---
 
