@@ -15,8 +15,8 @@ description: "A writeup of some challeges for ZH3R0CTF 2020"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
-hideSummary: false
-searchHidden: true
+hideSummary: true
+searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
