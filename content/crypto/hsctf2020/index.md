@@ -1,5 +1,5 @@
 ---
-title: "HSCTF 2020   Crypto"
+title: "  HSCTF 2020 Crypto"
 date: 2020-06-06T14:16:00+00:00
 weight: 9999
 # aliases: ["/first"]
