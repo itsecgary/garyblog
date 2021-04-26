@@ -5,7 +5,9 @@ showToc: false
 TocOpen: false
 ---
 
-<img src="/img/pic_itsecgary.png" height="600">
+<img src="/img/pic_itsecgary.png" height="300">
+
+
 
 Hello, thank you for coming to my website! My name is Gary and I like a lot of things. If you have already explored my website, you could probably tell that I like doing CTFs and making cool things. Here is some basic info about me:
 
