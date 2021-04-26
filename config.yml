@@ -60,7 +60,7 @@ params:
 
     profileMode:
         enabled: true
-        title: itsecgary
+        title: [itsecgary](https://itsecgary.com/about/)
         imageUrl: "/pic_itsecgary.png"
         imageTitle: pic_itsecgary
         imageWidth: 400
