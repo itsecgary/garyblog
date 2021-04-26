@@ -22,6 +22,7 @@ added (for list.html):
 **.post-entry (post-entry.css)**
 
 - `width: 350px;`
+- `min-height: 200px;`
 - `float: left;`
 - `margin-right: 30px;`
 
