@@ -28,16 +28,16 @@ cover:
     hidden: false # only hide on current single page
 ---
 
-**Dates:**
-June 1st - June 5th 2020
-
-**Team Members:**
-- itsecgary
-- pwang00
-
-https://ctftime.org/event/939
-
-[pwang00's writeups](https://github.com/pwang00/CTF-Writeups/tree/master/2020/hsctf)
+> **Dates:**
+> June 1st - June 5th 2020
+>
+> **Team Members:**
+> - itsecgary
+> - pwang00
+>
+> https://ctftime.org/event/939
+>
+> [pwang00's writeups](https://github.com/pwang00/CTF-Writeups/tree/master/2020/hsctf)
 
 
 ---
