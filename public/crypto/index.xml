@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cryptoes on itsecgary</title>
+    <link>https://www.itsecgary.com/crypto/</link>
+    <description>Recent content in Cryptoes on itsecgary</description>
+    <image>
+      <url>https://www.itsecgary.com/img/pic_itsecgary.png</url>
+      <link>https://www.itsecgary.com/img/pic_itsecgary.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 15 Jul 2020 14:16:00 +0000</lastBuildDate><atom:link href="https://www.itsecgary.com/crypto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>rgbCTF 2020 Crypto</title>
+      <link>https://www.itsecgary.com/crypto/rgbctf2020/</link>
+      <pubDate>Wed, 15 Jul 2020 14:16:00 +0000</pubDate>
+      
+      <guid>https://www.itsecgary.com/crypto/rgbctf2020/</guid>
+      <description>Writeups on crypto challenges for rgbCTF 2020</description>
+    </item>
+    
+    <item>
+      <title>redpwnCTF 2020 Crypto</title>
+      <link>https://www.itsecgary.com/crypto/redpwnctf2020/</link>
+      <pubDate>Mon, 29 Jun 2020 14:16:00 +0000</pubDate>
+      
+      <guid>https://www.itsecgary.com/crypto/redpwnctf2020/</guid>
+      <description>Writeups of crypto challenges for redpwnCTF 2020</description>
+    </item>
+    
+    <item>
+      <title>ZH3R0CTF 2020 Crypto</title>
+      <link>https://www.itsecgary.com/crypto/zh3r0ctf2020/</link>
+      <pubDate>Thu, 18 Jun 2020 14:16:00 +0000</pubDate>
+      
+      <guid>https://www.itsecgary.com/crypto/zh3r0ctf2020/</guid>
+      <description>Writeups on crypto challenges for ZH3R0CTF 2020</description>
+    </item>
+    
+    <item>
+      <title>  HSCTF 2020 Crypto</title>
+      <link>https://www.itsecgary.com/crypto/hsctf2020/</link>
+      <pubDate>Sat, 06 Jun 2020 14:16:00 +0000</pubDate>
+      
+      <guid>https://www.itsecgary.com/crypto/hsctf2020/</guid>
+      <description>Writeups on crypto challenges for HSCTF 2020</description>
+    </item>
+    
+  </channel>
+</rss>
