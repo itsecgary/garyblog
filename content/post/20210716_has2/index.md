@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: ""
+description: "Bit Flipper challenge writeup from Hack-A-Sat2"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
@@ -21,15 +21,11 @@ ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
+    image: "" # image path/url
+    alt: "image to be added" # alt text
+    caption: "" # display caption under cover
     relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
-editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+    hidden: false # only hide on current single page
 ---
 
 A couple weeks ago, I decided to compete in Hack-A-Sat2. I briefly looked at some of the challenges
