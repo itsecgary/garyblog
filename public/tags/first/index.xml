@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>first on itsecgary</title>
+    <link>https://www.itsecgary.com/tags/first/</link>
+    <description>Recent content in first on itsecgary</description>
+    <image>
+      <url>https://www.itsecgary.com/img/pic_itsecgary.png</url>
+      <link>https://www.itsecgary.com/img/pic_itsecgary.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 20 Apr 2021 11:07:03 +0000</lastBuildDate><atom:link href="https://www.itsecgary.com/tags/first/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome To My Website</title>
+      <link>https://www.itsecgary.com/post/20210420_myfirstpost/</link>
+      <pubDate>Tue, 20 Apr 2021 11:07:03 +0000</pubDate>
+      
+      <guid>https://www.itsecgary.com/post/20210420_myfirstpost/</guid>
+      <description>Brief note on what this website is for!</description>
+    </item>
+    
+  </channel>
+</rss>

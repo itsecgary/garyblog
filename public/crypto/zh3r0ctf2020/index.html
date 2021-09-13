@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>ZH3R0CTF 2020 Crypto | itsecgary</title>
+<meta name="keywords" content="writeup, crypto, zh3r0ctf" />
+<meta name="description" content="Writeups on crypto challenges for ZH3R0CTF 2020">
+<meta name="author" content="Me">
+<link rel="canonical" href="https://www.itsecgary.com/crypto/zh3r0ctf2020/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.aa57b3480a846a90232c79aec91bdc6d537a52da077078726a8191e8495673cb.css" integrity="sha256-qlezSAqEapAjLHmuyRvcbVN6UtoHcHhyaoGR6ElWc8s=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://www.itsecgary.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.itsecgary.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.itsecgary.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://www.itsecgary.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://www.itsecgary.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.85.0" />
+<meta property="og:title" content="ZH3R0CTF 2020 Crypto" />
+<meta property="og:description" content="Writeups on crypto challenges for ZH3R0CTF 2020" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.itsecgary.com/crypto/zh3r0ctf2020/" /><meta property="og:image" content="https://www.itsecgary.com/img/pic_itsecgary.png"/><meta property="article:section" content="crypto" />
+<meta property="article:published_time" content="2020-06-18T14:16:00&#43;00:00" />
+<meta property="article:modified_time" content="2020-06-18T14:16:00&#43;00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.itsecgary.com/img/pic_itsecgary.png"/>
+
+<meta name="twitter:title" content="ZH3R0CTF 2020 Crypto"/>
+<meta name="twitter:description" content="Writeups on crypto challenges for ZH3R0CTF 2020"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Cryptoes",
+      "item": "https://www.itsecgary.com/crypto/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "ZH3R0CTF 2020 Crypto",
+      "item": "https://www.itsecgary.com/crypto/zh3r0ctf2020/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "ZH3R0CTF 2020 Crypto",
+  "name": "ZH3R0CTF 2020 Crypto",
+  "description": "Writeups on crypto challenges for ZH3R0CTF 2020",
+  "keywords": [
+    "writeup", "crypto", "zh3r0ctf"
+  ],
+  "articleBody": " Mix Category: Crypto\nPoints: 330\nDescription:\n At the BASEment no. 65536, A man is irritated with SHIFT key in his KEYBOARD as it’s a sticky key, A kid is having chocolate icecream with a SPOON.\nAuthor: Whit3_D3vi1\nGiven: flag.txt \u0026\u0026 chall_encrypted.txt\n Writeup I opened flag.txt and got absolutely pwned :(\nIf you opened this then you are a n00b From the hint, we can see that the uppercase letters are telling us something. It seems this encrypted text is in base65536. Here is a link to a decoder. After decoding, we get the following output:\nflag 1: Yjod od s lrunpstf djogy vo[jrtyrcy jrtr od upi g;sh xj4t-}U-i+dit4+ flag 2: 3030313130313030203031313130303130203030313130303131203031303131313131203030313130313030203031313130313131203030313130303131203031313130303131203030313130303030203031313031313031203030313130303131203031303131313131203031313130313131203031313031303031203030313130313131203031313031303030 flag 3: MTExMTExMTExMTAwMTAwMDEwMTAxMDExMTAxMDExMTExMTEwMTAxMTExMTExMTExMDExMDExMDExMDExMDAwMDAxMTAxMDAxMDAxMDAxMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDAxMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDAwMDAwMDAwMDAwMTAxMDAwMTAxMDAxMDAwMTAxMDAxMTExMTExMTAwMTAxMDAxMDExMTExMTExMTAwMTAxMDAxMTAwMDAwMDAwMDAwMDAwMTAxMDAxMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDExMTExMTExMTExMTExMTExMTExMDAxMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAxMDEwMDAwMDAwMDAxMDEwMDExMDAwMDAwMDAxMDEwMDAxMDEwMTExMTAwMTAxMDAxMDExMTExMTExMTExMTExMTExMTExMDAxMDEwMDExMDExMDExMTExMTExMTExMTAwMTAxMA== Looks like we know what to do now!\nFlag 1: Keyboard Shift Cipher\n# After plugging and chugging zh3r0{Y0u_sur3_ Flag 2: Hex - Binary - ASCII\n# Hex to Binary 00110100 01110010 00110011 01011111 00110100 01110111 00110011 01110011 00110000 01101101 00110011 01011111 01110111 01101001 00110111 01101000 # Binary to ASCII 4r3_4w3s0m3_wi7h Flag 3: Spoon Cipher\n_411_7h3_ski115} Combining the flags together gives us the flag.\nFlag zh3r0{Y0u_sur3_4r3_4w3s0m3_wi7h_411_7h3_ski115} props to birch for helping me out on this one\n RSA-Warmup Category: Crypto\nPoints: 20\nDescription:\n RSA is one of the first public-key cryptosystems and is widely used for secure data transmission. In such a cryptosystem, the encryption key is public and distinct from the decryption key which is kept secret. You all know this :p here is a warmup question.\nnc crypto.zh3r0.ml 8451\nAuthor : Finch\n Writeup Right away, I connect to crypto.zh3r0.ml on 8451:\n$ nc crypto.zh3r0.ml 8451 N: 377527856297171022669430056458716981263384258911465530298564047397682287642100531751631168955623627172831784659749005505789640040456392136544756565404399136372321247852095482514289004599548556755136227142622582929120287466843804001721473294727815058414197945673495141542166225440016738784813546536980135143334440970683 e 65537 CT: 95948178426011852526092427535011433312244071609714551743388577712830026414291835888189885830916269208524310224012724690007902199693329646995676301990765789834069875091787078165512725155603953938812696365285032576235285424419104188074925160749412987648492099796143791507498570035439690972646885220025246628999734089438 Looks like we get the public key information and the ciphertext. Simple enough. Our goal here is to retrieve the private key from this information. Well, the value we really want the private exponent - d.\nA tool I always like to use for RSA challenges is RsaCtfTool (you can find a link under Resources). We can pass in our modulus (n) and public exponent - e and have it run through the attacks. The –private option indicates we want to extract the private key and the –dumpkey option dumps the information we want found from the private key extracted. That is, assuming we successfully extract the private key.\nHere is the command I used:\n$ ~/tools/RsaCtfTool/RsaCtfTool.py -n 377527856297171022669430056458716981263384258911465530298564047397682287642100531751631168955623627172831784659749005505789640040456392136544756565404399136372321247852095482514289004599548556755136227142622582929120287466843804001721473294727815058414197945673495141542166225440016738784813546536980135143334440970683 -e 65537 --private --dumpkey Output:\n[*] Testing key /tmp/tmp6ccy5el8. [*] Performing boneh_durfee attack on /tmp/tmp6ccy5el8. [*] Performing comfact_cn attack on /tmp/tmp6ccy5el8. [*] Performing cube_root attack on /tmp/tmp6ccy5el8. [*] Performing ecm attack on /tmp/tmp6ccy5el8. [*] ECM Method can run forever and may never succeed, timeout set to 30sec. Hit Ctrl-C to bail out. [*] Performing ecm2 attack on /tmp/tmp6ccy5el8. [*] ECM2 Method can run forever and may never succeed, timeout set to 30sec. Hit Ctrl-C to bail out. [*] Performing factordb attack on /tmp/tmp6ccy5el8. Results for /tmp/tmp6ccy5el8: Private key : -----BEGIN RSA PRIVATE KEY----- MIICMAIBAAKBhH0sgDnDQ1mkNuUnZO/mpoyDR4g75cI6VYtbA4pXLtfgJVnD4lep 6qT//hwsoqi2fgAZ3dyqj+shvwZ3q/w0OA1P6dGPVREz65H3WRxlkqXhbm8LIz2O RG8+aiXtGuKOcP7U4gN/vdUv/Ma+loHW9nH4EXb3MUtVex8YHlDCGoOinu2puwID AQABAoGESKHl1Uc9GEbSh7BtlDlcsY3sf+/hK0HBF7iUhMLWreXpJgNHjr3Odzx5 WQZBXzpwOsqreCqYpF+KeW+GUVYuUy8+wNOrHDNd7h7tvkewyp6b4lSani14jhtX yyfcuUIxW+dEXWQmZScR2hHCmv+7moyKhErMn6DC8vy/Rqjoio9PXf8hAgUA1L0y zwKBgQCWoNGhjoAaFWOI78WpjnlCfL9F6R/LtDPvODWGiZozKkCT4bl41uS7tk5f TfQSZHsDXRz5M3rxRzdw8VupI1y7YtrfkZ9KH80PAdDxFhrrKxWmBqOCxVW5kQkR 8BRJ4ZQRxV0blUJfEkm0/VLCUE7VsESlhOXZLG3ySESDznZFVQIECkYc1wKBgGAP cYFJgpKf31leKD2I2fY33je0g42Cf7horWH+cTN+F673vjO9QCQiEHshGK1+HSE5 CZg3Z4ll9Ip3sg/8uE/crF713JMGEt0mOFz3zvT5BhZal353YMM2JoWlCRtQ3AA1 ULqdhrVg0Va2U0gOtSf8ANtaFMdaWUexJNi2G6D9AgRh9WJR -----END RSA PRIVATE KEY----- n: 377527856297171022669430056458716981263384258911465530298564047397682287642100531751631168955623627172831784659749005505789640040456392136544756565404399136372321247852095482514289004599548556755136227142622582929120287466843804001721473294727815058414197945673495141542166225440016738784813546536980135143334440970683 e: 65537 d: 219061435757608963852907672365350121299489108161668187742617152085491396400767315113244112175489996960042494385717319659862230149219931086843159575463511365277827147675298287172908252862749761614617624713298567307138000590141729337640164470545650707611179689947921461153334557400166620309314271542064731256728948965153 p: 3569169103 q: 105774718261414643504894773952859969398705247872775147212901346074910894364004173593125259370940942265808856706263212742427923018041544482277436257803557237722821688298161725545534905578708456267597648522685472470627370962883683799983145067231020199273028937702729839399869484256268016557693917294055466091861 Nice! Looks like we extracted our private exponent. Here is a small python snippet to get the plaintext.\nfrom pwn import * from Crypto.Util.number import long_to_bytes n = 377527856297171022669430056458716981263384258911465530298564047397682287642100531751631168955623627172831784659749005505789640040456392136544756565404399136372321247852095482514289004599548556755136227142622582929120287466843804001721473294727815058414197945673495141542166225440016738784813546536980135143334440970683 d = 219061435757608963852907672365350121299489108161668187742617152085491396400767315113244112175489996960042494385717319659862230149219931086843159575463511365277827147675298287172908252862749761614617624713298567307138000590141729337640164470545650707611179689947921461153334557400166620309314271542064731256728948965153 c = 95948178426011852526092427535011433312244071609714551743388577712830026414291835888189885830916269208524310224012724690007902199693329646995676301990765789834069875091787078165512725155603953938812696365285032576235285424419104188074925160749412987648492099796143791507498570035439690972646885220025246628999734089438 m = pow(c,d,n) flag = long_to_bytes(m).decode(\"utf-8\") log.success(\"Flag: {}\".format(flag)) I use log.success() from pwntools cause it satisfies me to see the green plus so no hate.\nOutput:\n$ python3 rsa_warmup.py [+] Flag: zh3r0{RSA_1s_Fun} Flag zh3r0{RSA_1s_Fun}\nResources RsaCtfTool - https://github.com/Ganapati/RsaCtfTool\nRSA - https://en.wikipedia.org/wiki/RSA_(cryptosystem)\n Hastad’s Message Category: Crypto\nPoints: 411\nDescription:\n My friend Hastad send me a message but I am not able to read it. Only thing I know is its different each time.\nnc crypto.zh3r0.ml 7419\nAuthor : Finch\n Writeup Reading the description and thinking about the title, we can infer that this is most likely going to be solved by Hastad’s RSA Attack. There are some informative resources on Hastad’s Attack at the bottom if you want to read and/or watch a video on it.\nTo sum it up, we need three moduli and three ciphertexts. The attack uses some math to get a common modulus (I think). The attack also assumes the public exponent (e) is equal to 3.\nThe description notes that the message is different every time, which is great because we need three different sets of moduli and ciphertexts:\n$ nc crypto.zh3r0.ml 7419 N: 26329166984869041859634971942295508914086614756052649916715153888481838019446543659757155645116769584381237080447776835739170987527005814400394577761822009408643187035265928122611444675831972885388102505246050837141849411862111709116367913126692684315075812292118346525048043797743758647556197949162237012170765715489491252692831466048959316256355759727145883803064149037619208929139388737790411400133521644550402190755308716121097770368356659540585535532884876043170632478721624029571816011724967994226508693012935776285118552199186117433633100216881935216628735559281536730218432968021046737952051819658181259878149 CT: 13696674950433813895298041308045632529884066637106066434055761656634216946840402487500825692707297939337436811238475042408363119793161341988647831099617176608938843866551309386288691680095479772354016097889400273737533478113841958286151723116643033653995679615401212762174200830205198481421530614785072197545914307879082057254025517014619994399588859878772462750995973467253943907234301821576044216582246803850068027473821303077367989380520821734878595978138848610208844611305492117585477951318789794473666584152555731215918034102977914334062154485456843361952486458602554626960263460610725474127818677875972933875249 $ nc crypto.zh3r0.ml 7419 N: 22384216895184126503119624343320021821638233110863325898706560403197645878203817745790238197708416046618344094882982335720692685468281691146289903360608759314465378437068825261171471235483378433538257668429402907303532447870966095573819297418602601260325774195925269436319325981924076560794365192162562834753664301926653212755937853868506740496963626939832399258562954489056198250858902550995248399935612478913709617862129428374409234539923710672573540043364314100184572466402179424456471569591284089542460776340545139186988771394267096966020039348514804567035515030274507835577689524596337772418323549448243343361831 CT: 5353345346883089467141269968761525262677279170329666694797265115044928760952816917862665148190263741954651283587445076390324149524694842134461309999700504892826865511676944998156648254220372877253984503837884294212054018245851450555353751434222671390020506217356501583459507087748067302175421725020578101235352346674097473733309611211213878072286974934049276260742702782327298570150180281510979146190959585950244494373491367198797787947700591295353932747947492989216240541566454657386123685140779948477566980018178539683614588716842717894118803413424004986059577548748432511218870669050221814751292921897431242248941 $ nc crypto.zh3r0.ml 7419 N: 22424243940237609093986181521248901242782094037697873373836836736493013117260495680987607769354269320561576377180539010732084017919614407493417604713138573086392460341825569544329294333785416106775326335231740978161329178536710032114103565077914290391270889095078548028956464075135014835042893633426595475887865312994493395174535036307668304725413758492249582598657435602203689640301841897950479233122713167542454482902649867247742813614034808103280371220185593639727153149613933683852108452848538974235423325030571301060804485909616787540913079701564237236038710949156042408869849909619744500748736648228888569573589 CT: 14248998542824914719750911379086920493500471888638705238133866311748059581683708422549036932370027910990304631217481702400469486898162095317239864189584616787472445614519498539566076996422644593520710194926830242522562819000277287688504181287249564196723442838873910913236286542856580569459769886968942760506614856615797894115905258930225533376037968554243022975808731677888560753976786112293175192882447689169089532325198116284561341385989363237692683318157037034971649251468292971739244270525145089816866123381203273750512577151312036713011523059957036531932480131619100026838056618714367910138597216504150041537796 I used echo to put each value into n1, n2, n3, c1, c2, and c3. I did this because the tool I am using passes these files in as arguments. Now, let’s run the tool:\n$ python ~/tools/RSA-Hastad/rsaHastad.py n1 n2 n3 c1 c2 c3 -v ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ RSA Hastad Attack JulesDT -- 2016 License GNU/GPL ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ## ## 13696674950433813895298041308045632529884066637106066434055761656634216946840402487500825692707297939337436811238475042408363119793161341988647831099617176608938843866551309386288691680095479772354016097889400273737533478113841958286151723116643033653995679615401212762174200830205198481421530614785072197545914307879082057254025517014619994399588859878772462750995973467253943907234301821576044216582246803850068027473821303077367989380520821734878595978138848610208844611305492117585477951318789794473666584152555731215918034102977914334062154485456843361952486458602554626960263460610725474127818677875972933875249 ## Guessed as decimal input ## ## ## 5353345346883089467141269968761525262677279170329666694797265115044928760952816917862665148190263741954651283587445076390324149524694842134461309999700504892826865511676944998156648254220372877253984503837884294212054018245851450555353751434222671390020506217356501583459507087748067302175421725020578101235352346674097473733309611211213878072286974934049276260742702782327298570150180281510979146190959585950244494373491367198797787947700591295353932747947492989216240541566454657386123685140779948477566980018178539683614588716842717894118803413424004986059577548748432511218870669050221814751292921897431242248941 ## Guessed as decimal input ## ## ## 14248998542824914719750911379086920493500471888638705238133866311748059581683708422549036932370027910990304631217481702400469486898162095317239864189584616787472445614519498539566076996422644593520710194926830242522562819000277287688504181287249564196723442838873910913236286542856580569459769886968942760506614856615797894115905258930225533376037968554243022975808731677888560753976786112293175192882447689169089532325198116284561341385989363237692683318157037034971649251468292971739244270525145089816866123381203273750512577151312036713011523059957036531932480131619100026838056618714367910138597216504150041537796 ## Guessed as decimal input ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Decoded Hex : 1ff486017316ddb482dd84be39ff75bba80868b195a1df065bbc83184ba949f68f229da7c1e0a9087fe97189100113cfbe4c1271fc8e2c003d135633095019af55f988f8b790a28ebba20192f28b5fe30417d67cbcede052775c74fa889e22be57ad2519f978ebd34209a621c73024e95bf5ea84ef24d9407a4a010e097e1a903fdefd1b8be92ddd94f47395b6ef5192da1c19f66169729a9a4719abd38c44007af74468c915a936c0f27aeb8ccaf223687ceff1be530c8e0881355f80bc6a576c682d --------------------------- In Ascii: [random stuff] Hmmmm that didn’t work. Maybe we can try to change the value of e to a different prime? I edited the script to use 5 instead of 3 for e. Let’s run it again:\n$ python ~/tools/RSA-Hastad/rsaHastad.py n1 n2 n3 c1 c2 c3 -v ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ RSA Hastad Attack JulesDT -- 2016 License GNU/GPL ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ## ## 13696674950433813895298041308045632529884066637106066434055761656634216946840402487500825692707297939337436811238475042408363119793161341988647831099617176608938843866551309386288691680095479772354016097889400273737533478113841958286151723116643033653995679615401212762174200830205198481421530614785072197545914307879082057254025517014619994399588859878772462750995973467253943907234301821576044216582246803850068027473821303077367989380520821734878595978138848610208844611305492117585477951318789794473666584152555731215918034102977914334062154485456843361952486458602554626960263460610725474127818677875972933875249 ## Guessed as decimal input ## ## ## 5353345346883089467141269968761525262677279170329666694797265115044928760952816917862665148190263741954651283587445076390324149524694842134461309999700504892826865511676944998156648254220372877253984503837884294212054018245851450555353751434222671390020506217356501583459507087748067302175421725020578101235352346674097473733309611211213878072286974934049276260742702782327298570150180281510979146190959585950244494373491367198797787947700591295353932747947492989216240541566454657386123685140779948477566980018178539683614588716842717894118803413424004986059577548748432511218870669050221814751292921897431242248941 ## Guessed as decimal input ## ## ## 14248998542824914719750911379086920493500471888638705238133866311748059581683708422549036932370027910990304631217481702400469486898162095317239864189584616787472445614519498539566076996422644593520710194926830242522562819000277287688504181287249564196723442838873910913236286542856580569459769886968942760506614856615797894115905258930225533376037968554243022975808731677888560753976786112293175192882447689169089532325198116284561341385989363237692683318157037034971649251468292971739244270525145089816866123381203273750512577151312036713011523059957036531932480131619100026838056618714367910138597216504150041537796 ## Guessed as decimal input ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Decoded Hex : 497473206772656174207468617420796f75206861766520636f6d652074696c6c20686572652e2041732070726f6d69736564206865726520697320796f757220666c61673a207a683372307b5253415f31735f306e335f6f665f7468335f623473745f656e637279707431306e5f42753636797d --------------------------- As Ascii : Its great that you have come till here. As promised here is your flag: zh3r0{RSA_1s_0n3_of_th3_b4st_encrypt10n_Bu66y} ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Flag zh3r0{RSA_1s_0n3_of_th3_b4st_encrypt10n_Bu66y}\nResources Video - https://www.youtube.com/watch?v=aS57JCzJw_o\nPython Script - https://github.com/JulesDT/RSA-Hastad\n",
+  "wordCount" : "954",
+  "inLanguage": "en",
+  "datePublished": "2020-06-18T14:16:00Z",
+  "dateModified": "2020-06-18T14:16:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Me"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.itsecgary.com/crypto/zh3r0ctf2020/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "itsecgary",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.itsecgary.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: #1d1e20;
+                --entry: #2e2e33;
+                --primary: rgba(255, 255, 255, 0.84);
+                --secondary: rgba(255, 255, 255, 0.56);
+                --tertiary: rgba(255, 255, 255, 0.16);
+                --content: rgba(255, 255, 255, 0.74);
+                --hljs-bg: #2e2e33;
+                --code-bg: #37383e;
+                --border: #333;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://www.itsecgary.com" accesskey="h" title="itsecgary (Alt + H)">itsecgary</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu" onscroll="menu_on_scroll()">
+            <li>
+                <a href="https://www.itsecgary.com/post/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.itsecgary.com/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.itsecgary.com/writeups/" title="Writeups">
+                    <span>Writeups</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.itsecgary.com/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main-group">
+
+<div class="main">
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://www.itsecgary.com">Home</a>&nbsp;»&nbsp;<a href="https://www.itsecgary.com/crypto/">Cryptoes</a></div>
+    <h1 class="post-title">
+      ZH3R0CTF 2020 Crypto
+    </h1>
+    <div class="post-description">
+      Writeups on crypto challenges for ZH3R0CTF 2020
+    </div>
+    <div class="post-meta">June 18, 2020&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Me
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <div class="details">Table of Contents</div>
+        </summary>
+        <div class="inner"><ul>
+                <li>
+                    <a href="#mix" aria-label="Mix">Mix</a><ul>
+                        
+                <li>
+                    <a href="#writeup" aria-label="Writeup">Writeup</a></li>
+                <li>
+                    <a href="#flag" aria-label="Flag">Flag</a></li></ul>
+                </li>
+                <li>
+                    <a href="#rsa-warmup" aria-label="RSA-Warmup">RSA-Warmup</a><ul>
+                        
+                <li>
+                    <a href="#writeup-1" aria-label="Writeup">Writeup</a></li>
+                <li>
+                    <a href="#flag-1" aria-label="Flag">Flag</a></li>
+                <li>
+                    <a href="#resources" aria-label="Resources">Resources</a></li></ul>
+                </li>
+                <li>
+                    <a href="#hastads-message" aria-label="Hastad&amp;rsquo;s Message">Hastad&rsquo;s Message</a><ul>
+                        
+                <li>
+                    <a href="#writeup-2" aria-label="Writeup">Writeup</a></li>
+                <li>
+                    <a href="#flag-2" aria-label="Flag">Flag</a></li>
+                <li>
+                    <a href="#resources-1" aria-label="Resources">Resources</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><img src="/img/crypto.png">
+<hr>
+<h2 id="mix">Mix<a hidden class="anchor" aria-hidden="true" href="#mix">#</a></h2>
+<p><strong>Category:</strong> Crypto</p>
+<p><strong>Points:</strong> 330</p>
+<p><strong>Description:</strong></p>
+<blockquote>
+<p>At the BASEment no. 65536, A man is irritated with SHIFT key in his KEYBOARD
+as it&rsquo;s a sticky key, A kid is having chocolate icecream with a SPOON.</p>
+<p><strong>Author:</strong> Whit3_D3vi1</p>
+<p><strong>Given:</strong> flag.txt &amp;&amp; chall_encrypted.txt</p>
+</blockquote>
+<h3 id="writeup">Writeup<a hidden class="anchor" aria-hidden="true" href="#writeup">#</a></h3>
+<p>I opened <code>flag.txt</code> and got absolutely pwned :(</p>
+<pre><code>If you opened this then you are a n00b
+</code></pre><p>From the hint, we can see that the uppercase letters are telling us something.
+It seems this encrypted text is in base65536. <a href="https://www.better-converter.com/Encoders-Decoders/Base65536-Decode">Here</a>
+is a link to a decoder. After decoding, we get the following output:</p>
+<pre><code>flag 1:
+Yjod od s lrunpstf djogy vo[jrtyrcy jrtr od upi g;sh xj4t-}U-i+dit4+
+
+flag 2:
+3030313130313030203031313130303130203030313130303131203031303131313131203030313130313030203031313130313131203030313130303131203031313130303131203030313130303030203031313031313031203030313130303131203031303131313131203031313130313131203031313031303031203030313130313131203031313031303030
+
+flag 3:
+MTExMTExMTExMTAwMTAwMDEwMTAxMDExMTAxMDExMTExMTEwMTAxMTExMTExMTExMDExMDExMDExMDExMDAwMDAxMTAxMDAxMDAxMDAxMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDAxMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDAwMDAwMDAwMDAwMTAxMDAwMTAxMDAxMDAwMTAxMDAxMTExMTExMTAwMTAxMDAxMDExMTExMTExMTAwMTAxMDAxMTAwMDAwMDAwMDAwMDAwMTAxMDAxMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDExMTExMTExMTExMTExMTExMTExMDAxMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAxMDEwMDAwMDAwMDAxMDEwMDExMDAwMDAwMDAxMDEwMDAxMDEwMTExMTAwMTAxMDAxMDExMTExMTExMTExMTExMTExMTExMDAxMDEwMDExMDExMDExMTExMTExMTExMTAwMTAxMA==
+</code></pre><p>Looks like we know what to do now!</p>
+<p><strong>Flag 1:</strong> <a href="https://www.dcode.fr/keyboard-shift-cipher">Keyboard Shift Cipher</a></p>
+<pre><code># After plugging and chugging
+zh3r0{Y0u_sur3_
+</code></pre><p><strong>Flag 2:</strong> <a href="%22https://gchq.github.io/CyberChef/#recipe=From_Hex('None')From_Binary('Space')">Hex -&gt; Binary -&gt; ASCII</a></p>
+<pre><code># Hex to Binary
+00110100 01110010 00110011 01011111 00110100 01110111 00110011 01110011 00110000 01101101 00110011 01011111 01110111 01101001 00110111 01101000
+
+# Binary to ASCII
+4r3_4w3s0m3_wi7h
+</code></pre><p><strong>Flag 3:</strong> <a href="https://www.dcode.fr/spoon-language">Spoon Cipher</a></p>
+<pre><code>_411_7h3_ski115}
+</code></pre><p>Combining the flags together gives us the flag.</p>
+<h3 id="flag">Flag<a hidden class="anchor" aria-hidden="true" href="#flag">#</a></h3>
+<p><code>zh3r0{Y0u_sur3_4r3_4w3s0m3_wi7h_411_7h3_ski115}</code>
+<em>props to <a href="https://github.com/aldenschmidt">birch</a> for helping me out on this one</em></p>
+<hr>
+<h2 id="rsa-warmup">RSA-Warmup<a hidden class="anchor" aria-hidden="true" href="#rsa-warmup">#</a></h2>
+<p><strong>Category:</strong> Crypto</p>
+<p><strong>Points:</strong> 20</p>
+<p><strong>Description:</strong></p>
+<blockquote>
+<p>RSA is one of the first public-key cryptosystems and is widely used for secure
+data transmission. In such a cryptosystem, the encryption key is public and distinct
+from the decryption key which is kept secret.
+You all know this :p
+here is a warmup question.</p>
+<p>nc crypto.zh3r0.ml 8451</p>
+<p><strong>Author :</strong> Finch</p>
+</blockquote>
+<h3 id="writeup-1">Writeup<a hidden class="anchor" aria-hidden="true" href="#writeup-1">#</a></h3>
+<p>Right away, I connect to <em>crypto.zh3r0.ml</em> on <em>8451</em>:</p>
+<pre><code>$ nc crypto.zh3r0.ml 8451
+N: 377527856297171022669430056458716981263384258911465530298564047397682287642100531751631168955623627172831784659749005505789640040456392136544756565404399136372321247852095482514289004599548556755136227142622582929120287466843804001721473294727815058414197945673495141542166225440016738784813546536980135143334440970683
+e 65537
+CT: 95948178426011852526092427535011433312244071609714551743388577712830026414291835888189885830916269208524310224012724690007902199693329646995676301990765789834069875091787078165512725155603953938812696365285032576235285424419104188074925160749412987648492099796143791507498570035439690972646885220025246628999734089438
+</code></pre><p>Looks like we get the public key information and the ciphertext. Simple enough.
+Our goal here is to retrieve the private key from this information. Well, the
+value we really want the private exponent - <strong>d</strong>.</p>
+<p>A tool I always like to use for RSA challenges is <strong>RsaCtfTool</strong> (you can find a
+link under <em>Resources</em>). We can pass in our modulus (<strong>n</strong>) and public exponent - <strong>e</strong>
+and have it run through the attacks. The <em>&ndash;private</em> option indicates we want to
+extract the private key and the <em>&ndash;dumpkey</em> option dumps the information we want
+found from the private key extracted. That is, assuming we successfully
+extract the private key.</p>
+<p>Here is the command I used:</p>
+<pre><code>$ ~/tools/RsaCtfTool/RsaCtfTool.py -n 377527856297171022669430056458716981263384258911465530298564047397682287642100531751631168955623627172831784659749005505789640040456392136544756565404399136372321247852095482514289004599548556755136227142622582929120287466843804001721473294727815058414197945673495141542166225440016738784813546536980135143334440970683 -e 65537 --private --dumpkey
+</code></pre><p><strong>Output:</strong></p>
+<pre><code>[*] Testing key /tmp/tmp6ccy5el8.
+[*] Performing boneh_durfee attack on /tmp/tmp6ccy5el8.
+[*] Performing comfact_cn attack on /tmp/tmp6ccy5el8.
+[*] Performing cube_root attack on /tmp/tmp6ccy5el8.
+[*] Performing ecm attack on /tmp/tmp6ccy5el8.
+[*] ECM Method can run forever and may never succeed, timeout set to 30sec. Hit Ctrl-C to bail out.
+[*] Performing ecm2 attack on /tmp/tmp6ccy5el8.
+[*] ECM2 Method can run forever and may never succeed, timeout set to 30sec. Hit Ctrl-C to bail out.
+[*] Performing factordb attack on /tmp/tmp6ccy5el8.
+
+Results for /tmp/tmp6ccy5el8:
+
+Private key :
+-----BEGIN RSA PRIVATE KEY-----
+MIICMAIBAAKBhH0sgDnDQ1mkNuUnZO/mpoyDR4g75cI6VYtbA4pXLtfgJVnD4lep
+6qT//hwsoqi2fgAZ3dyqj+shvwZ3q/w0OA1P6dGPVREz65H3WRxlkqXhbm8LIz2O
+RG8+aiXtGuKOcP7U4gN/vdUv/Ma+loHW9nH4EXb3MUtVex8YHlDCGoOinu2puwID
+AQABAoGESKHl1Uc9GEbSh7BtlDlcsY3sf+/hK0HBF7iUhMLWreXpJgNHjr3Odzx5
+WQZBXzpwOsqreCqYpF+KeW+GUVYuUy8+wNOrHDNd7h7tvkewyp6b4lSani14jhtX
+yyfcuUIxW+dEXWQmZScR2hHCmv+7moyKhErMn6DC8vy/Rqjoio9PXf8hAgUA1L0y
+zwKBgQCWoNGhjoAaFWOI78WpjnlCfL9F6R/LtDPvODWGiZozKkCT4bl41uS7tk5f
+TfQSZHsDXRz5M3rxRzdw8VupI1y7YtrfkZ9KH80PAdDxFhrrKxWmBqOCxVW5kQkR
+8BRJ4ZQRxV0blUJfEkm0/VLCUE7VsESlhOXZLG3ySESDznZFVQIECkYc1wKBgGAP
+cYFJgpKf31leKD2I2fY33je0g42Cf7horWH+cTN+F673vjO9QCQiEHshGK1+HSE5
+CZg3Z4ll9Ip3sg/8uE/crF713JMGEt0mOFz3zvT5BhZal353YMM2JoWlCRtQ3AA1
+ULqdhrVg0Va2U0gOtSf8ANtaFMdaWUexJNi2G6D9AgRh9WJR
+-----END RSA PRIVATE KEY-----
+n: 377527856297171022669430056458716981263384258911465530298564047397682287642100531751631168955623627172831784659749005505789640040456392136544756565404399136372321247852095482514289004599548556755136227142622582929120287466843804001721473294727815058414197945673495141542166225440016738784813546536980135143334440970683
+e: 65537
+d: 219061435757608963852907672365350121299489108161668187742617152085491396400767315113244112175489996960042494385717319659862230149219931086843159575463511365277827147675298287172908252862749761614617624713298567307138000590141729337640164470545650707611179689947921461153334557400166620309314271542064731256728948965153
+p: 3569169103
+q: 105774718261414643504894773952859969398705247872775147212901346074910894364004173593125259370940942265808856706263212742427923018041544482277436257803557237722821688298161725545534905578708456267597648522685472470627370962883683799983145067231020199273028937702729839399869484256268016557693917294055466091861
+</code></pre><p>Nice! Looks like we extracted our private exponent. Here is a small python
+snippet to get the plaintext.</p>
+<pre><code>from pwn import *
+from Crypto.Util.number import long_to_bytes
+
+n = 377527856297171022669430056458716981263384258911465530298564047397682287642100531751631168955623627172831784659749005505789640040456392136544756565404399136372321247852095482514289004599548556755136227142622582929120287466843804001721473294727815058414197945673495141542166225440016738784813546536980135143334440970683
+d = 219061435757608963852907672365350121299489108161668187742617152085491396400767315113244112175489996960042494385717319659862230149219931086843159575463511365277827147675298287172908252862749761614617624713298567307138000590141729337640164470545650707611179689947921461153334557400166620309314271542064731256728948965153
+c = 95948178426011852526092427535011433312244071609714551743388577712830026414291835888189885830916269208524310224012724690007902199693329646995676301990765789834069875091787078165512725155603953938812696365285032576235285424419104188074925160749412987648492099796143791507498570035439690972646885220025246628999734089438
+
+m = pow(c,d,n)
+flag = long_to_bytes(m).decode(&quot;utf-8&quot;)
+log.success(&quot;Flag: {}&quot;.format(flag))
+</code></pre><p>I use log.success() from <em>pwntools</em> cause it satisfies me to see the green plus
+so no hate.</p>
+<p><strong>Output:</strong></p>
+<pre><code>$ python3 rsa_warmup.py
+[+] Flag: zh3r0{RSA_1s_Fun}
+</code></pre><h3 id="flag-1">Flag<a hidden class="anchor" aria-hidden="true" href="#flag-1">#</a></h3>
+<p><code>zh3r0{RSA_1s_Fun}</code></p>
+<h3 id="resources">Resources<a hidden class="anchor" aria-hidden="true" href="#resources">#</a></h3>
+<p>RsaCtfTool - <a href="https://github.com/Ganapati/RsaCtfTool">https://github.com/Ganapati/RsaCtfTool</a></p>
+<p>RSA - <a href="https://en.wikipedia.org/wiki/RSA_(cryptosystem)">https://en.wikipedia.org/wiki/RSA_(cryptosystem)</a></p>
+<hr>
+<h2 id="hastads-message">Hastad&rsquo;s Message<a hidden class="anchor" aria-hidden="true" href="#hastads-message">#</a></h2>
+<p><strong>Category:</strong> Crypto</p>
+<p><strong>Points:</strong> 411</p>
+<p><strong>Description:</strong></p>
+<blockquote>
+<p>My friend Hastad send me a message but I am not able to read it. Only thing I
+know is its different each time.</p>
+<p>nc crypto.zh3r0.ml 7419</p>
+<p><strong>Author :</strong> Finch</p>
+</blockquote>
+<h3 id="writeup-2">Writeup<a hidden class="anchor" aria-hidden="true" href="#writeup-2">#</a></h3>
+<p>Reading the description and thinking about the title, we can infer that this is
+most likely going to be solved by <strong>Hastad&rsquo;s RSA Attack</strong>. There are some
+informative resources on Hastad&rsquo;s Attack at the bottom if you want to read
+and/or watch a video on it.</p>
+<p>To sum it up, we need three moduli and three ciphertexts. The attack uses some
+math to get a common modulus (I think). The attack also assumes the public
+exponent (<strong>e</strong>) is equal to <strong>3</strong>.</p>
+<p>The description notes that the message is different every time, which is great
+because we need three different sets of moduli and ciphertexts:</p>
+<pre><code>$ nc crypto.zh3r0.ml 7419
+N: 26329166984869041859634971942295508914086614756052649916715153888481838019446543659757155645116769584381237080447776835739170987527005814400394577761822009408643187035265928122611444675831972885388102505246050837141849411862111709116367913126692684315075812292118346525048043797743758647556197949162237012170765715489491252692831466048959316256355759727145883803064149037619208929139388737790411400133521644550402190755308716121097770368356659540585535532884876043170632478721624029571816011724967994226508693012935776285118552199186117433633100216881935216628735559281536730218432968021046737952051819658181259878149
+CT: 13696674950433813895298041308045632529884066637106066434055761656634216946840402487500825692707297939337436811238475042408363119793161341988647831099617176608938843866551309386288691680095479772354016097889400273737533478113841958286151723116643033653995679615401212762174200830205198481421530614785072197545914307879082057254025517014619994399588859878772462750995973467253943907234301821576044216582246803850068027473821303077367989380520821734878595978138848610208844611305492117585477951318789794473666584152555731215918034102977914334062154485456843361952486458602554626960263460610725474127818677875972933875249
+
+$ nc crypto.zh3r0.ml 7419
+N: 22384216895184126503119624343320021821638233110863325898706560403197645878203817745790238197708416046618344094882982335720692685468281691146289903360608759314465378437068825261171471235483378433538257668429402907303532447870966095573819297418602601260325774195925269436319325981924076560794365192162562834753664301926653212755937853868506740496963626939832399258562954489056198250858902550995248399935612478913709617862129428374409234539923710672573540043364314100184572466402179424456471569591284089542460776340545139186988771394267096966020039348514804567035515030274507835577689524596337772418323549448243343361831
+CT: 5353345346883089467141269968761525262677279170329666694797265115044928760952816917862665148190263741954651283587445076390324149524694842134461309999700504892826865511676944998156648254220372877253984503837884294212054018245851450555353751434222671390020506217356501583459507087748067302175421725020578101235352346674097473733309611211213878072286974934049276260742702782327298570150180281510979146190959585950244494373491367198797787947700591295353932747947492989216240541566454657386123685140779948477566980018178539683614588716842717894118803413424004986059577548748432511218870669050221814751292921897431242248941
+
+$ nc crypto.zh3r0.ml 7419
+N: 22424243940237609093986181521248901242782094037697873373836836736493013117260495680987607769354269320561576377180539010732084017919614407493417604713138573086392460341825569544329294333785416106775326335231740978161329178536710032114103565077914290391270889095078548028956464075135014835042893633426595475887865312994493395174535036307668304725413758492249582598657435602203689640301841897950479233122713167542454482902649867247742813614034808103280371220185593639727153149613933683852108452848538974235423325030571301060804485909616787540913079701564237236038710949156042408869849909619744500748736648228888569573589
+CT: 14248998542824914719750911379086920493500471888638705238133866311748059581683708422549036932370027910990304631217481702400469486898162095317239864189584616787472445614519498539566076996422644593520710194926830242522562819000277287688504181287249564196723442838873910913236286542856580569459769886968942760506614856615797894115905258930225533376037968554243022975808731677888560753976786112293175192882447689169089532325198116284561341385989363237692683318157037034971649251468292971739244270525145089816866123381203273750512577151312036713011523059957036531932480131619100026838056618714367910138597216504150041537796
+</code></pre><p>I used <strong>echo</strong> to put each value into <strong>n1</strong>, <strong>n2</strong>, <strong>n3</strong>, <strong>c1</strong>, <strong>c2</strong>,
+and <strong>c3</strong>. I did this because the tool I am using passes these files in as
+arguments. Now, let&rsquo;s run the tool:</p>
+<pre><code>$ python ~/tools/RSA-Hastad/rsaHastad.py n1 n2 n3 c1 c2 c3 -v
+
+
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                RSA Hastad Attack
+                 JulesDT -- 2016
+                 License GNU/GPL
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+##
+## 13696674950433813895298041308045632529884066637106066434055761656634216946840402487500825692707297939337436811238475042408363119793161341988647831099617176608938843866551309386288691680095479772354016097889400273737533478113841958286151723116643033653995679615401212762174200830205198481421530614785072197545914307879082057254025517014619994399588859878772462750995973467253943907234301821576044216582246803850068027473821303077367989380520821734878595978138848610208844611305492117585477951318789794473666584152555731215918034102977914334062154485456843361952486458602554626960263460610725474127818677875972933875249
+## Guessed as decimal input
+##
+##
+## 5353345346883089467141269968761525262677279170329666694797265115044928760952816917862665148190263741954651283587445076390324149524694842134461309999700504892826865511676944998156648254220372877253984503837884294212054018245851450555353751434222671390020506217356501583459507087748067302175421725020578101235352346674097473733309611211213878072286974934049276260742702782327298570150180281510979146190959585950244494373491367198797787947700591295353932747947492989216240541566454657386123685140779948477566980018178539683614588716842717894118803413424004986059577548748432511218870669050221814751292921897431242248941
+## Guessed as decimal input
+##
+##
+## 14248998542824914719750911379086920493500471888638705238133866311748059581683708422549036932370027910990304631217481702400469486898162095317239864189584616787472445614519498539566076996422644593520710194926830242522562819000277287688504181287249564196723442838873910913236286542856580569459769886968942760506614856615797894115905258930225533376037968554243022975808731677888560753976786112293175192882447689169089532325198116284561341385989363237692683318157037034971649251468292971739244270525145089816866123381203273750512577151312036713011523059957036531932480131619100026838056618714367910138597216504150041537796
+## Guessed as decimal input
+##
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Decoded Hex :
+1ff486017316ddb482dd84be39ff75bba80868b195a1df065bbc83184ba949f68f229da7c1e0a9087fe97189100113cfbe4c1271fc8e2c003d135633095019af55f988f8b790a28ebba20192f28b5fe30417d67cbcede052775c74fa889e22be57ad2519f978ebd34209a621c73024e95bf5ea84ef24d9407a4a010e097e1a903fdefd1b8be92ddd94f47395b6ef5192da1c19f66169729a9a4719abd38c44007af74468c915a936c0f27aeb8ccaf223687ceff1be530c8e0881355f80bc6a576c682d
+---------------------------
+
+In Ascii: [random stuff]
+</code></pre><p>Hmmmm that didn&rsquo;t work. Maybe we can try to change the value of e to a different
+prime? I edited the script to use <strong>5</strong> instead of <strong>3</strong> for <strong>e</strong>. Let&rsquo;s run it
+again:</p>
+<pre><code>$ python ~/tools/RSA-Hastad/rsaHastad.py n1 n2 n3 c1 c2 c3 -v
+
+
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                RSA Hastad Attack
+                 JulesDT -- 2016
+                 License GNU/GPL
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+##
+## 13696674950433813895298041308045632529884066637106066434055761656634216946840402487500825692707297939337436811238475042408363119793161341988647831099617176608938843866551309386288691680095479772354016097889400273737533478113841958286151723116643033653995679615401212762174200830205198481421530614785072197545914307879082057254025517014619994399588859878772462750995973467253943907234301821576044216582246803850068027473821303077367989380520821734878595978138848610208844611305492117585477951318789794473666584152555731215918034102977914334062154485456843361952486458602554626960263460610725474127818677875972933875249
+## Guessed as decimal input
+##
+##
+## 5353345346883089467141269968761525262677279170329666694797265115044928760952816917862665148190263741954651283587445076390324149524694842134461309999700504892826865511676944998156648254220372877253984503837884294212054018245851450555353751434222671390020506217356501583459507087748067302175421725020578101235352346674097473733309611211213878072286974934049276260742702782327298570150180281510979146190959585950244494373491367198797787947700591295353932747947492989216240541566454657386123685140779948477566980018178539683614588716842717894118803413424004986059577548748432511218870669050221814751292921897431242248941
+## Guessed as decimal input
+##
+##
+## 14248998542824914719750911379086920493500471888638705238133866311748059581683708422549036932370027910990304631217481702400469486898162095317239864189584616787472445614519498539566076996422644593520710194926830242522562819000277287688504181287249564196723442838873910913236286542856580569459769886968942760506614856615797894115905258930225533376037968554243022975808731677888560753976786112293175192882447689169089532325198116284561341385989363237692683318157037034971649251468292971739244270525145089816866123381203273750512577151312036713011523059957036531932480131619100026838056618714367910138597216504150041537796
+## Guessed as decimal input
+##
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Decoded Hex :
+497473206772656174207468617420796f75206861766520636f6d652074696c6c20686572652e2041732070726f6d69736564206865726520697320796f757220666c61673a207a683372307b5253415f31735f306e335f6f665f7468335f623473745f656e637279707431306e5f42753636797d
+---------------------------
+As Ascii :
+Its great that you have come till here. As promised here is your flag: zh3r0{RSA_1s_0n3_of_th3_b4st_encrypt10n_Bu66y}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+</code></pre><h3 id="flag-2">Flag<a hidden class="anchor" aria-hidden="true" href="#flag-2">#</a></h3>
+<p><code>zh3r0{RSA_1s_0n3_of_th3_b4st_encrypt10n_Bu66y}</code></p>
+<h3 id="resources-1">Resources<a hidden class="anchor" aria-hidden="true" href="#resources-1">#</a></h3>
+<p>Video - <a href="https://www.youtube.com/watch?v=aS57JCzJw_o">https://www.youtube.com/watch?v=aS57JCzJw_o</a></p>
+<p>Python Script - <a href="https://github.com/JulesDT/RSA-Hastad">https://github.com/JulesDT/RSA-Hastad</a></p>
+
+</div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://www.itsecgary.com/tags/writeup/">writeup</a></li>
+      <li><a href="https://www.itsecgary.com/tags/crypto/">crypto</a></li>
+      <li><a href="https://www.itsecgary.com/tags/zh3r0ctf/">zh3r0ctf</a></li>
+    </ul>
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share ZH3R0CTF 2020 Crypto on twitter"
+        href="https://twitter.com/intent/tweet/?text=ZH3R0CTF%202020%20Crypto&amp;url=https%3a%2f%2fwww.itsecgary.com%2fcrypto%2fzh3r0ctf2020%2f&amp;hashtags=writeup%2ccrypto%2czh3r0ctf">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share ZH3R0CTF 2020 Crypto on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.itsecgary.com%2fcrypto%2fzh3r0ctf2020%2f&amp;title=ZH3R0CTF%202020%20Crypto&amp;summary=ZH3R0CTF%202020%20Crypto&amp;source=https%3a%2f%2fwww.itsecgary.com%2fcrypto%2fzh3r0ctf2020%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share ZH3R0CTF 2020 Crypto on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2fwww.itsecgary.com%2fcrypto%2fzh3r0ctf2020%2f&title=ZH3R0CTF%202020%20Crypto">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share ZH3R0CTF 2020 Crypto on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.itsecgary.com%2fcrypto%2fzh3r0ctf2020%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share ZH3R0CTF 2020 Crypto on whatsapp"
+        href="https://api.whatsapp.com/send?text=ZH3R0CTF%202020%20Crypto%20-%20https%3a%2f%2fwww.itsecgary.com%2fcrypto%2fzh3r0ctf2020%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share ZH3R0CTF 2020 Crypto on telegram"
+        href="https://telegram.me/share/url?text=ZH3R0CTF%202020%20Crypto&amp;url=https%3a%2f%2fwww.itsecgary.com%2fcrypto%2fzh3r0ctf2020%2f">
+        <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28">
+            <path
+                d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+        </svg>
+    </a>
+</div>
+
+  </footer>
+</article>
+</div>
+    </main>
+    <footer class="footer">
+    <span>&copy; 2021 <a href="https://www.itsecgary.com">itsecgary</a></span>
+    <span>&middot;</span>
+    <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a></span>
+    <span>&middot;</span>
+    <span>Theme <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+    <button class="top-link" id="top-link" type="button" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+
+<script>
+    window.onload = function () {
+        if (localStorage.getItem("menu-scroll-position")) {
+            document.getElementById('menu').scrollLeft = localStorage.getItem("menu-scroll-position");
+        }
+    }
+
+    function menu_on_scroll() {
+        localStorage.setItem("menu-scroll-position", document.getElementById('menu').scrollLeft);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

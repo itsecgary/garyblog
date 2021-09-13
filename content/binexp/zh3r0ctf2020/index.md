@@ -22,11 +22,6 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ---
 
-<img src="/img/binexp.png">
-
----
-
-
 ## Command-1
 **Category:** Binary Exploitation
 

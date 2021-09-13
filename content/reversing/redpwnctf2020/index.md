@@ -22,10 +22,6 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ---
 
-<img src="/img/reversing.png">
-
----
-
 ## bubbly
 **Category:** Rev
 

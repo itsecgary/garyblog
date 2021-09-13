@@ -22,11 +22,6 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ---
 
-<img src="/img/forensics.png">
-
----
-
-
 ## Picture Lab: Activity 10
 **Category:** Forensics
 

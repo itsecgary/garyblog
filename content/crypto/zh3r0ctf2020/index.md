@@ -22,11 +22,6 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ---
 
-<img src="/img/crypto.png">
-
----
-
-
 ## Mix
 **Category:** Crypto
 

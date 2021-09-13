@@ -22,11 +22,6 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ---
 
-<img src="/img/tryhackme.png">
-
----
-
-
 ## HTB
 **Category:** Hack The Box
 

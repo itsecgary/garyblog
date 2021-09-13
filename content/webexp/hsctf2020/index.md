@@ -22,11 +22,6 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ---
 
-<img src="/img/web.png">
-
----
-
-
 ## Blurry Eyes
 **Category:** Web
 

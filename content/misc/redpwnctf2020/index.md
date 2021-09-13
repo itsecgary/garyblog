@@ -22,10 +22,6 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ---
 
-<img src="/img/misc.png">
-
----
-
 ## uglybash
 **Category:** Misc
 

@@ -22,11 +22,6 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ---
 
-<img src="/img/reversing.png">
-
----
-
-
 ## AP Lab: English Language
 **Category:** Reverse
 

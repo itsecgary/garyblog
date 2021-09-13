@@ -22,11 +22,6 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ---
 
-<img src="/img/algorithms.png">
-
----
-
-
 ## Pythagorean Tree Fractal 1
 **Category:** Algorithms
 

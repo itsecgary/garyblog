@@ -22,10 +22,6 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ---
 
-<img src="/img/web.png">
-
----
-
 ## static-pastebin
 **Category:** Web
 

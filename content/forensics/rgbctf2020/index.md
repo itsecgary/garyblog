@@ -22,10 +22,6 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ---
 
-<img src="/img/forensics.png">
-
----
-
 ## Alien Transmission 1
 **Category:** Forensics/OSINT
 

@@ -22,10 +22,6 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ---
 
-<img src="/img/crypto.png">
-
----
-
 ## e
 **Category:** Cryptography
 
