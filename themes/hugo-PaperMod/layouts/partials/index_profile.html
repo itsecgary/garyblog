@@ -1,3 +1,4 @@
+<div class="main">
 <div class="profile">
     {{- with .Site.Params.profileMode }}
     <div class="profile_inner">
@@ -12,12 +13,13 @@
         {{- with .buttons }}
         <div class="buttons">
             {{- range . }}
-            <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name | title }}">
-                <span class="button-inner">{{ .name | title }}</span>
+            <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name | humanize }}">
+                <span class="button-inner">{{ .name }}</span>
             </a>
             {{- end }}
         </div>
         {{- end }}
     </div>
     {{- end}}
+</div>
 </div>
