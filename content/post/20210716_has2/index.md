@@ -21,8 +21,8 @@ ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 cover:
-    image: "" # image path/url
-    alt: "image to be added" # alt text
+    image: "has2.png" # image path/url
+    alt: "Hack A Sat 2 logo" # alt text
     caption: "" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: false # only hide on current single page
@@ -256,5 +256,5 @@ change from `<` to `>` slide right pass the SECDED check :)
 
 
 This year we finished in 56th, which was honestly pretty solid considering it was just a few of us competing. 
-Definitely hoping to be more prepared for next year because those prizes were \<heart\_eyes\_emoji\>
+Definitely hoping to be more prepared for next year because those prizes were juicy!
 
