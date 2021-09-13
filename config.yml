@@ -61,7 +61,7 @@ params:
     profileMode:
         enabled: true
         title: itsecgary
-        imageUrl: "/pic_itsecgary.png"
+        imageUrl: "/img/pic_itsecgary.png"
         imageTitle: pic_itsecgary
         imageWidth: 400
         imageHeight: 400
