@@ -1,12 +1,12 @@
 ---
 title: "Hack-a-Sat2 Bit Flipper"
 date: 2021-09-15T07:05:03+00:00
-# weight: 1
+weight: 2
 # aliases: ["/first"]
 tags: ["hack-a-sat"]
 author: "Me"
 # author: ["Me", "You"] # multiple authors
-showToc: true
+showToc: false
 TocOpen: false
 draft: false
 hidemeta: false
