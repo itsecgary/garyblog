@@ -41,26 +41,18 @@ cover:
 
 ---
 
+
 <br>
-<a href="https://www.itsecgary.com/binexp/zh3r0ctf2020">
-    <img src="/img/binexp.png" height="70" class="border">
-</a>
+<a href="https://www.itsecgary.com/binexp/zh3r0ctf2020">PWN</a>
 <br>
-<a href="https://www.itsecgary.com/crypto/zh3r0ctf2020">
-    <img src="/img/crypto.png" height="70" class="border">
-</a>
+<a href="https://www.itsecgary.com/crypto/zh3r0ctf2020">CRYPTO</a>
 <br>
-<a href="https://www.itsecgary.com/forensics/zh3r0ctf2020">
-    <img src="/img/forensics.png" height="70" class="border">
-</a>
+<a href="https://www.itsecgary.com/forensics/zh3r0ctf2020">FORENSICS</a>
 <br>
-<a href="https://www.itsecgary.com/tryhackme/zh3r0ctf2020">
-    <img src="/img/tryhackme.png" height="70" class="border">
-</a>
+<a href="https://www.itsecgary.com/tryhackme/zh3r0ctf2020">TRYHACKME</a>
 <br>
-<a href="https://www.itsecgary.com/webexp/zh3r0ctf2020">
-    <img src="/img/web.png" height="70" class="border">
-</a>
+<a href="https://www.itsecgary.com/webexp/zh3r0ctf2020">WEB</a>
+<br>
 
 ---
 

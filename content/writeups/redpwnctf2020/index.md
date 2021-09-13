@@ -41,20 +41,12 @@ cover:
 ---
 
 <br>
-<a href="https://www.itsecgary.com/crypto/redpwnctf2020">
-    <img src="/img/crypto.png" height="70" class="border">
-</a>
+<a href="https://www.itsecgary.com/crypto/redpwnctf2020">CRYPTO</a>
 <br>
-<a href="https://www.itsecgary.com/misc/redpwnctf2020">
-    <img src="/img/misc.png" height="70" class="border">
-</a>
+<a href="https://www.itsecgary.com/misc/redpwnctf2020">MISC</a>
 <br>
-<a href="https://www.itsecgary.com/reversing/redpwnctf2020">
-    <img src="/img/reversing.png" height="70" class="border">
-</a>
+<a href="https://www.itsecgary.com/reversing/redpwnctf2020">REVERSING</a>
 <br>
-<a href="https://www.itsecgary.com/webexp/redpwnctf2020">
-    <img src="/img/web.png" height="70" class="border">
-</a>
-
+<a href="https://www.itsecgary.com/webexp/redpwnctf2020">WEB</a>
+<br>
 

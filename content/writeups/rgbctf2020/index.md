@@ -40,12 +40,10 @@ cover:
 > https://ctftime.org/event/1042
 
 <br>
-<a href="https://www.itsecgary.com/crypto/rgbctf2020">
-    <img src="/img/crypto.png" height="70" class="border">
-</a>
+<a href="https://www.itsecgary.com/crypto/rgbctf2020">CRYPTO</a>
 <br>
-<a href="https://www.itsecgary.com/forensics/rgbctf2020">
-    <img src="/img/forensics.png" height="70" class="border">
-</a>
+<a href="https://www.itsecgary.com/forensics/rgbctf2020">FORENSICS</a>
+<br>
 
+---
 

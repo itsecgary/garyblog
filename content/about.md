@@ -10,23 +10,23 @@ TocOpen: false
 <br>
 
 
-Hello, thank you for coming to my website! My name is Gary and I like a lot of things. If you have already explored my website, you could probably tell that I like doing CTFs and making cool things. Here is some basic info about me:
+Hello, thank you for coming to my website! My name is Gary and I like a lot of things. If you have already explored my website, you could probably tell that I like doing CTFs and making cool things. Here's some basic info about me:
 
 
 ### Education
 
-- Junior (class of 2022)
+- Senior (class of 2022)
 
 - Major: Computer Engineering
 
-- Minor: Russian
+- Minor: Russian Language
 
 
 ### Work Experience
 
-- 2021 Internship with Northrop Grumman working on an ASIC design team
+- (current) Lab TA for intro to engineering course at UMD [Fall'20, Spring'21, Fall'21]
 
-- (Fall 2020, Spring 2021) Lab TA for intro to engineering course at UMD
+- 2021 Internship with Northrop Grumman working on an ASIC design team
 
 - 2020 Internship with Northrop Grumman working on an ASIC design team
 
